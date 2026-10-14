@@ -67,7 +67,7 @@ The simulation is checked against real data: the Tunisian household average (abo
 | `meters.parquet` | Reported readings per home every 15 minutes: voltage, current, power, energy registers, solar output where shared, with labels |
 | `meters_true.parquet` | The same readings, true values |
 | `feeder_head.parquet` | Substation readings per feeder and phase |
-| `transformer.parquet` | Transformer load, oil temperature and losses |
+| `transformer.parquet` | Transformer load, temperature and losses |
 | `context.parquet` | Weather, calendar and the reference solar panel |
 | `alarms.csv` | Alarms the meters send at once |
 | `collection_log.csv` | Readings the substation failed to collect |
@@ -138,6 +138,3 @@ An autoencoder alongside the Isolation Forest, a calibrated confidence model tha
 - Residential feeder loads, Laayoune, Morocco: UCI Machine Learning Repository, dataset 1158 (CC BY 4.0).
 - Household benchmark: UNESCWA (2017).
 
-## Team
-
-VoltTrust (IEEE Student Branch), TSYP14.
