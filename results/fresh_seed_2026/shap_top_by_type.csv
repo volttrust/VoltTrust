@@ -1,0 +1,10 @@
+true_type,r_id,r_v,rv_sd
+clock_skew,0,0,96
+coordinated_fdi,0,0,2
+drift_current,0,0,1
+high_resistance_joint,0,2,55
+leakage,0,0,1
+meter_end_of_life,2,0,87
+no event (false alert),0,0,38
+noise_growth,2,0,233
+replay,0,0,11

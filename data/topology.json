@@ -1,0 +1,308 @@
+{
+  "feeders": 2,
+  "poles_per_feeder": 12,
+  "segment_impedance_ohm": [
+    0.02653,
+    0.0028000000000000004
+  ],
+  "service_drop_impedance_ohm": [
+    0.0955,
+    0.002
+  ],
+  "transformer_impedance_ohm": [
+    0.023769003286662645,
+    0.059422508216656615
+  ],
+  "busbar_no_load_phase_voltage_v": 238.04999999999998,
+  "meters": [
+    {
+      "meter_id": "M001",
+      "feeder": "F1",
+      "pole": 1,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M002",
+      "feeder": "F1",
+      "pole": 1,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M003",
+      "feeder": "F1",
+      "pole": 2,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M004",
+      "feeder": "F1",
+      "pole": 2,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M005",
+      "feeder": "F1",
+      "pole": 3,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M006",
+      "feeder": "F1",
+      "pole": 3,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M007",
+      "feeder": "F1",
+      "pole": 4,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M008",
+      "feeder": "F1",
+      "pole": 4,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M009",
+      "feeder": "F1",
+      "pole": 5,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M010",
+      "feeder": "F1",
+      "pole": 5,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M011",
+      "feeder": "F1",
+      "pole": 6,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M012",
+      "feeder": "F1",
+      "pole": 6,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M013",
+      "feeder": "F1",
+      "pole": 7,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M014",
+      "feeder": "F1",
+      "pole": 7,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M015",
+      "feeder": "F1",
+      "pole": 8,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M016",
+      "feeder": "F1",
+      "pole": 8,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M017",
+      "feeder": "F1",
+      "pole": 9,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M018",
+      "feeder": "F1",
+      "pole": 9,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M019",
+      "feeder": "F1",
+      "pole": 10,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M020",
+      "feeder": "F1",
+      "pole": 10,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M021",
+      "feeder": "F1",
+      "pole": 11,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M022",
+      "feeder": "F1",
+      "pole": 11,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M023",
+      "feeder": "F1",
+      "pole": 12,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M024",
+      "feeder": "F1",
+      "pole": 12,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M025",
+      "feeder": "F2",
+      "pole": 1,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M026",
+      "feeder": "F2",
+      "pole": 1,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M027",
+      "feeder": "F2",
+      "pole": 2,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M028",
+      "feeder": "F2",
+      "pole": 2,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M029",
+      "feeder": "F2",
+      "pole": 3,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M030",
+      "feeder": "F2",
+      "pole": 3,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M031",
+      "feeder": "F2",
+      "pole": 4,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M032",
+      "feeder": "F2",
+      "pole": 4,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M033",
+      "feeder": "F2",
+      "pole": 5,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M034",
+      "feeder": "F2",
+      "pole": 5,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M035",
+      "feeder": "F2",
+      "pole": 6,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M036",
+      "feeder": "F2",
+      "pole": 6,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M037",
+      "feeder": "F2",
+      "pole": 7,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M038",
+      "feeder": "F2",
+      "pole": 7,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M039",
+      "feeder": "F2",
+      "pole": 8,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M040",
+      "feeder": "F2",
+      "pole": 8,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M041",
+      "feeder": "F2",
+      "pole": 9,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M042",
+      "feeder": "F2",
+      "pole": 9,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M043",
+      "feeder": "F2",
+      "pole": 10,
+      "phase": "A"
+    },
+    {
+      "meter_id": "M044",
+      "feeder": "F2",
+      "pole": 10,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M045",
+      "feeder": "F2",
+      "pole": 11,
+      "phase": "B"
+    },
+    {
+      "meter_id": "M046",
+      "feeder": "F2",
+      "pole": 11,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M047",
+      "feeder": "F2",
+      "pole": 12,
+      "phase": "C"
+    },
+    {
+      "meter_id": "M048",
+      "feeder": "F2",
+      "pole": 12,
+      "phase": "A"
+    }
+  ],
+  "transformer_kva": 100.0
+}

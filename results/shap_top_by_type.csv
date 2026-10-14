@@ -1,0 +1,7 @@
+true_type,r_v,rv_sd
+clock_skew,0,7
+coordinated_fdi,0,5
+high_resistance_joint,8,30
+meter_end_of_life,0,3
+noise_growth,3,142
+replay,0,1

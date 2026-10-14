@@ -1,0 +1,5119 @@
+[
+  {
+    "event_id": "AL00788",
+    "t_start": "2025-08-01 12:30:00",
+    "t_end": "2025-08-01 14:00:00",
+    "assets": [
+      "M031"
+    ],
+    "verdict": "data_quality",
+    "subtype": "drift",
+    "confidence": 0.836,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.369680418701311,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.167
+    }
+  },
+  {
+    "event_id": "AL00789",
+    "t_start": "2025-08-01 13:30:00",
+    "t_end": "2025-08-01 14:30:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.867,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.7363315616528041,
+        "max_abs_identity_resid": 0.009666315802897332,
+        "voltage_slope_v_per_day": 0.8938506450955498,
+        "iforest_score": 0.6270848077696375
+      },
+      "neighbors_affected": 0.167
+    }
+  },
+  {
+    "event_id": "AL00790",
+    "t_start": "2025-08-01 19:30:00",
+    "t_end": "2025-08-02 00:45:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.3479294621692475,
+        "max_abs_identity_resid": 0.013005810776629722,
+        "voltage_slope_v_per_day": -0.3898601112145721,
+        "iforest_score": 0.7883579368214392
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00791",
+    "t_start": "2025-08-01 19:45:00",
+    "t_end": "2025-08-02 00:45:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.958926867158965,
+        "max_abs_identity_resid": 0.011964462039293735,
+        "voltage_slope_v_per_day": -0.44946145550411276,
+        "iforest_score": 0.7925403442875227
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00792",
+    "t_start": "2025-08-01 19:45:00",
+    "t_end": "2025-08-02 00:45:00",
+    "assets": [
+      "M045"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.323799683007195,
+        "max_abs_identity_resid": 0.019004359790867873,
+        "voltage_slope_v_per_day": -0.505171774943924,
+        "iforest_score": 0.7781340726051961
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00793",
+    "t_start": "2025-08-01 19:45:00",
+    "t_end": "2025-08-02 00:45:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.022375101864583,
+        "max_abs_identity_resid": 0.013002937932532597,
+        "voltage_slope_v_per_day": -0.38390032606972324,
+        "iforest_score": 0.7960845351235735
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00794",
+    "t_start": "2025-08-01 20:00:00",
+    "t_end": "2025-08-02 01:00:00",
+    "assets": [
+      "M028"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.6019557709696244,
+        "max_abs_identity_resid": 0.017630279499072882,
+        "voltage_slope_v_per_day": -0.46483103375898593,
+        "iforest_score": 0.7640065681061359
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00795",
+    "t_start": "2025-08-01 20:00:00",
+    "t_end": "2025-08-02 00:45:00",
+    "assets": [
+      "M027"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.04701283926147,
+        "max_abs_identity_resid": 0.00838275774043531,
+        "voltage_slope_v_per_day": -0.431468338374708,
+        "iforest_score": 0.7870304331898075
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00796",
+    "t_start": "2025-08-01 20:15:00",
+    "t_end": "2025-08-02 00:15:00",
+    "assets": [
+      "M039"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.3343060874633466,
+        "max_abs_identity_resid": 0.013364604856372215,
+        "voltage_slope_v_per_day": -0.3622052844803015,
+        "iforest_score": 0.7306234275741037
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00797",
+    "t_start": "2025-08-02 10:30:00",
+    "t_end": "2025-08-02 11:00:00",
+    "assets": [
+      "M047"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.955,
+    "evidence": {
+      "rules_fired": [
+        "register_jump"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.853890034022271,
+        "max_abs_identity_resid": 0.002680793504122836,
+        "voltage_slope_v_per_day": 0.04261942197058989,
+        "iforest_score": 0.5977467261528314
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00798",
+    "t_start": "2025-08-02 12:00:00",
+    "t_end": "2025-08-06 08:15:00",
+    "assets": [
+      "M009"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "leakage",
+    "confidence": 0.773,
+    "evidence": {
+      "rules_fired": [
+        "night_leakage",
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6441641151298256,
+        "max_abs_identity_resid": 0.018226660759959046,
+        "voltage_slope_v_per_day": 0.22114697926900306,
+        "iforest_score": 0.6658912432542414,
+        "pv_ratio_to_peers": 0.4125766398472911
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00799",
+    "t_start": "2025-08-02 12:15:00",
+    "t_end": "2025-08-02 14:15:00",
+    "assets": [
+      "M031"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9350019129381621,
+        "max_abs_identity_resid": 0.012045704401612255,
+        "voltage_slope_v_per_day": 1.0354858222090553,
+        "iforest_score": 0.6162859065477506
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00800",
+    "t_start": "2025-08-02 12:15:00",
+    "t_end": "2025-08-02 15:15:00",
+    "assets": [
+      "M039"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.8577125876940954,
+        "max_abs_identity_resid": 0.009963741190986595,
+        "voltage_slope_v_per_day": 0.7883009128781802,
+        "iforest_score": 0.6475222952390828
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00801",
+    "t_start": "2025-08-02 12:15:00",
+    "t_end": "2025-08-02 14:45:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.8897322392533908,
+        "max_abs_identity_resid": 0.009705139742956082,
+        "voltage_slope_v_per_day": 0.6788942064801472,
+        "iforest_score": 0.6592841558898543
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00802",
+    "t_start": "2025-08-02 12:30:00",
+    "t_end": "2025-08-02 14:00:00",
+    "assets": [
+      "M028"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.3051135906264937,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00803",
+    "t_start": "2025-08-02 12:45:00",
+    "t_end": "2025-08-02 15:15:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.8728488920777693,
+        "max_abs_identity_resid": 0.011299088742906091,
+        "voltage_slope_v_per_day": 0.7386976235933229,
+        "iforest_score": 0.61775226306067
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00804",
+    "t_start": "2025-08-02 13:00:00",
+    "t_end": "2025-08-02 15:15:00",
+    "assets": [
+      "M027"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.7631339159537163,
+        "max_abs_identity_resid": 0.013365934006197077,
+        "voltage_slope_v_per_day": 0.6955663424721834,
+        "iforest_score": 0.6266849896427362
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00805",
+    "t_start": "2025-08-02 13:15:00",
+    "t_end": "2025-08-02 14:15:00",
+    "assets": [
+      "M045"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.5574995886752276,
+        "max_abs_identity_resid": 0.004544660761346235,
+        "voltage_slope_v_per_day": 0.5853589928421341,
+        "iforest_score": 0.569461632012672,
+        "pv_ratio_to_peers": 0.998392853397845
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00806",
+    "t_start": "2025-08-02 13:15:00",
+    "t_end": "2025-08-02 14:15:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9484265637682938,
+        "max_abs_identity_resid": 0.00857062543211253,
+        "voltage_slope_v_per_day": 0.6104145193280192,
+        "iforest_score": 0.5861886798642894,
+        "pv_ratio_to_peers": 0.9539972678110034
+      },
+      "neighbors_affected": 0.417
+    }
+  },
+  {
+    "event_id": "AL00807",
+    "t_start": "2025-08-02 18:45:00",
+    "t_end": "2025-08-09 00:00:00",
+    "assets": [
+      "F2-A"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.871,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase",
+        "balance_gap_phase_slow"
+      ],
+      "scores": {
+        "gap_kw": 0.046
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M043",
+          "beta": 0.049,
+          "t": 4.5,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M048",
+          "beta": 0.034,
+          "t": 2.8,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M026",
+          "beta": 0.021,
+          "t": 2.3,
+          "evidence": "weak"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00808",
+    "t_start": "2025-08-02 18:45:00",
+    "t_end": "2025-08-03 01:45:00",
+    "assets": [
+      "M039"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.935070579392004,
+        "max_abs_identity_resid": 0.024254213481469618,
+        "voltage_slope_v_per_day": -0.8792057228612302,
+        "iforest_score": 0.7724925134952679
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00809",
+    "t_start": "2025-08-02 18:45:00",
+    "t_end": "2025-08-03 01:30:00",
+    "assets": [
+      "M045"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.166403029992381,
+        "max_abs_identity_resid": 0.020426600630598504,
+        "voltage_slope_v_per_day": -0.847494996227443,
+        "iforest_score": 0.7656481710148463
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00810",
+    "t_start": "2025-08-02 18:45:00",
+    "t_end": "2025-08-03 02:15:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.614,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.230397379330412,
+        "max_abs_identity_resid": 0.014228624574053819,
+        "voltage_slope_v_per_day": -0.9089584197613494,
+        "iforest_score": 0.7634001121364419
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00811",
+    "t_start": "2025-08-02 19:00:00",
+    "t_end": "2025-08-03 01:15:00",
+    "assets": [
+      "M027"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.082889974127454,
+        "max_abs_identity_resid": 0.012265916942370659,
+        "voltage_slope_v_per_day": -0.8506718822408103,
+        "iforest_score": 0.7757679932057105
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00812",
+    "t_start": "2025-08-02 19:00:00",
+    "t_end": "2025-08-03 02:00:00",
+    "assets": [
+      "M031"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.885469167581306,
+        "max_abs_identity_resid": 0.007993286827987578,
+        "voltage_slope_v_per_day": -1.0698550141497416,
+        "iforest_score": 0.7566359848646753
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00813",
+    "t_start": "2025-08-02 19:00:00",
+    "t_end": "2025-08-03 01:45:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.916480388438941,
+        "max_abs_identity_resid": 0.018068230774574208,
+        "voltage_slope_v_per_day": -0.8391098423891512,
+        "iforest_score": 0.7705017759850901
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00814",
+    "t_start": "2025-08-02 19:00:00",
+    "t_end": "2025-08-03 01:45:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "high_resistance_joint",
+    "confidence": 0.868,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_drop"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.635768800931942,
+        "max_abs_identity_resid": 0.017075156122106024,
+        "voltage_slope_v_per_day": -0.822268940322489,
+        "iforest_score": 0.7670173217428558
+      },
+      "neighbors_affected": 0.375
+    }
+  },
+  {
+    "event_id": "AL00815",
+    "t_start": "2025-08-03 12:45:00",
+    "t_end": "2025-08-03 13:15:00",
+    "assets": [
+      "M028"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.867,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.5295245481558766,
+        "max_abs_identity_resid": 0.007604388580238709,
+        "voltage_slope_v_per_day": 0.842071646061134,
+        "iforest_score": 0.6812820812800934
+      },
+      "neighbors_affected": 0.25
+    }
+  },
+  {
+    "event_id": "AL00816",
+    "t_start": "2025-08-03 13:00:00",
+    "t_end": "2025-08-03 13:45:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.867,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6801994683631847,
+        "max_abs_identity_resid": 0.01386188223464203,
+        "voltage_slope_v_per_day": 0.4900137719374449,
+        "iforest_score": 0.692222519532646
+      },
+      "neighbors_affected": 0.25
+    }
+  },
+  {
+    "event_id": "AL00817",
+    "t_start": "2025-08-03 13:00:00",
+    "t_end": "2025-08-03 14:45:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9128626696497975,
+        "max_abs_identity_resid": 0.004193334785157046,
+        "voltage_slope_v_per_day": 0.6462059357420172,
+        "iforest_score": 0.6852203416133481
+      },
+      "neighbors_affected": 0.25
+    }
+  },
+  {
+    "event_id": "AL00818",
+    "t_start": "2025-08-03 13:00:00",
+    "t_end": "2025-08-03 14:45:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.0493757937395856,
+        "max_abs_identity_resid": 0.010877480740843966,
+        "voltage_slope_v_per_day": 0.6284855890152498,
+        "iforest_score": 0.6878448882249204,
+        "pv_ratio_to_peers": 0.986623789025251
+      },
+      "neighbors_affected": 0.25
+    }
+  },
+  {
+    "event_id": "AL00819",
+    "t_start": "2025-08-03 13:45:00",
+    "t_end": "2025-08-03 14:15:00",
+    "assets": [
+      "M031"
+    ],
+    "verdict": "data_quality",
+    "subtype": "falsified",
+    "confidence": 0.727,
+    "evidence": {
+      "rules_fired": [
+        "group_voltage_rise"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.2976774221002643,
+        "max_abs_identity_resid": 0.013477640892619895,
+        "voltage_slope_v_per_day": -0.13199738233483246,
+        "iforest_score": 0.6500975349214339
+      },
+      "neighbors_affected": 0.208
+    }
+  },
+  {
+    "event_id": "AL00820",
+    "t_start": "2025-08-04 13:30:00",
+    "t_end": "2025-08-04 17:45:00",
+    "assets": [
+      "M004"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_inverter_trip",
+    "confidence": 0.875,
+    "evidence": {
+      "rules_fired": [
+        "pv_inverter_trip"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.9113054489978651,
+        "max_abs_identity_resid": 0.011399962080172056,
+        "voltage_slope_v_per_day": -0.0590984599946168,
+        "iforest_score": 0.4962571344235173,
+        "pv_ratio_to_peers": -0.14132759139777312
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00821",
+    "t_start": "2025-08-04 14:30:00",
+    "t_end": "2025-08-05 23:00:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.871,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase",
+        "balance_gap_phase_slow"
+      ],
+      "scores": {
+        "gap_kw": 0.093
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M011",
+          "beta": -0.024,
+          "t": -4.7,
+          "evidence": "strong"
+        },
+        {
+          "meter": "M003",
+          "beta": 0.006,
+          "t": 1.0,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M022",
+          "beta": 0.01,
+          "t": 0.6,
+          "evidence": "weak"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00822",
+    "t_start": "2025-08-04 15:00:00",
+    "t_end": "2025-08-04 21:45:00",
+    "assets": [
+      "M011"
+    ],
+    "verdict": "data_quality",
+    "subtype": "stuck",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "register_jump",
+        "stuck",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.1486086616054934,
+        "max_abs_identity_resid": 0.015175126453644683,
+        "voltage_slope_v_per_day": 0.42815365649071213,
+        "iforest_score": 0.7156713449324053,
+        "pv_ratio_to_peers": 1.828574115530776
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00823",
+    "t_start": "2025-08-05 05:45:00",
+    "t_end": "2025-08-05 19:15:00",
+    "assets": [
+      "M008"
+    ],
+    "verdict": "data_quality",
+    "subtype": "dropout",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "dropout"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.08563688657382498,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00824",
+    "t_start": "2025-08-05 06:45:00",
+    "t_end": "2025-08-05 12:00:00",
+    "assets": [
+      "M004"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_inverter_trip",
+    "confidence": 0.875,
+    "evidence": {
+      "rules_fired": [
+        "pv_inverter_trip"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.7205566785736437,
+        "max_abs_identity_resid": 0.015532543996102866,
+        "voltage_slope_v_per_day": -0.008534583225917063,
+        "iforest_score": 0.5230026630158645,
+        "pv_ratio_to_peers": -0.11757268887644927
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00825",
+    "t_start": "2025-08-07 13:45:00",
+    "t_end": "2025-08-10 02:00:00",
+    "assets": [
+      "M025"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.027983397093465,
+        "max_abs_identity_resid": 0.022031526282645562,
+        "voltage_slope_v_per_day": 0.044897822719848116,
+        "iforest_score": 0.6824758513768918
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00826",
+    "t_start": "2025-08-08 00:00:00",
+    "t_end": "2025-08-10 00:00:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.2616369195637276,
+        "max_abs_identity_resid": 0.013288929594541013,
+        "voltage_slope_v_per_day": 0.05453001941773404,
+        "iforest_score": 0.6132673370078363,
+        "pv_ratio_to_peers": 0.7992589899504461
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00827",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F2-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00828",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F1-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00829",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00830",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F2-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00831",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F1-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00832",
+    "t_start": "2025-08-10 10:30:00",
+    "t_end": "2025-08-10 11:30:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00833",
+    "t_start": "2025-08-10 12:00:00",
+    "t_end": "2025-08-11 09:00:00",
+    "assets": [
+      "M026"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.5304289466361354,
+        "max_abs_identity_resid": 0.013688077278613549,
+        "voltage_slope_v_per_day": -0.020292213204917805,
+        "iforest_score": 0.5172370832476363,
+        "pv_ratio_to_peers": 0.7601677150603349
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00834",
+    "t_start": "2025-08-10 12:00:00",
+    "t_end": "2025-08-15 00:00:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.806,
+    "evidence": {
+      "rules_fired": [
+        "head_outage",
+        "head_sag",
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6492789063516966,
+        "max_abs_identity_resid": 0.01566370879429775,
+        "voltage_slope_v_per_day": 0.073336593002565,
+        "iforest_score": 0.6337650707410907,
+        "pv_ratio_to_peers": 0.7855205843849256
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00835",
+    "t_start": "2025-08-10 13:45:00",
+    "t_end": "2025-08-17 14:00:00",
+    "assets": [
+      "M025"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.836,
+    "evidence": {
+      "rules_fired": [
+        "head_outage",
+        "head_sag",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.071675532748003,
+        "max_abs_identity_resid": 0.02645086636653844,
+        "voltage_slope_v_per_day": 0.01579352167670649,
+        "iforest_score": 0.7167851028558038
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00836",
+    "t_start": "2025-08-11 09:45:00",
+    "t_end": "2025-08-11 18:00:00",
+    "assets": [
+      "M045"
+    ],
+    "verdict": "data_quality",
+    "subtype": "pv_reading_stuck",
+    "confidence": 0.917,
+    "evidence": {
+      "rules_fired": [
+        "head_sag",
+        "pv_reading_stuck"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.7834189447277993,
+        "max_abs_identity_resid": 0.007688329770410868,
+        "voltage_slope_v_per_day": 0.08905634315659038,
+        "iforest_score": 0.50894423173459
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00837",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F2-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00838",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F2-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00839",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00840",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00841",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F1-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00842",
+    "t_start": "2025-08-11 16:00:00",
+    "t_end": "2025-08-11 16:15:00",
+    "assets": [
+      "F1-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "sag",
+    "confidence": 0.964,
+    "evidence": {
+      "rules_fired": [
+        "head_sag"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00843",
+    "t_start": "2025-08-12 01:15:00",
+    "t_end": "2025-08-12 23:15:00",
+    "assets": [
+      "M017"
+    ],
+    "verdict": "data_quality",
+    "subtype": "dropout",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "dropout"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.03735300195300533,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.042
+    }
+  },
+  {
+    "event_id": "AL00844",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00845",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M002"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.0659096689415774,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00846",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M026"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.0,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00847",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M039"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.019676133610292013,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00848",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.023218047445692478,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00849",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M043"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.001618833168677693,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00850",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M011"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.07676096410034212,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00851",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.016791761245877012,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00852",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F1-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00853",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M006"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.0027544359934784956,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00854",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M037"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.006715818297187903,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00855",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M024"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.07287958351247956,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00856",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M023"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.06876477641895348,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00857",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M047"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.17874584268176288,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00858",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M014"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.01967964841433827,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00859",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M007"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.09983026727498959,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00860",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M022"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.0785834114103238,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00861",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M004"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.039088571348066016,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00862",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M021"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.025430913318802963,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00863",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00864",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M034"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.11314187990255209,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00865",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M017"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.2904168976261953,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00866",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M008"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.05336416554037259,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00867",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M033"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.09963047884367554,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00868",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.04219296488001746,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00869",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M013"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.029471033262462695,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00870",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M020"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.030825488156396942,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00871",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M001"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.005348891663053148,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00872",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M019"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.026965921861010413,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00873",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M028"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.011135510059618272,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00874",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M029"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.026663042339028824,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00875",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F2-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00876",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M044"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.09042322966342278,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00877",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M003"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.06889203142626807,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00878",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M005"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.053434367731321694,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00879",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M035"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.0391398568058233,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00880",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M012"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.014966177291808599,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00881",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F1-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00882",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M045"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.010480083090539742,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00883",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M046"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.09812003567100601,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00884",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.02174769566975221,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00885",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M009"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.011391936116497846,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.875
+    }
+  },
+  {
+    "event_id": "AL00886",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "F2-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00887",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M041"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.10774490769423377,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00888",
+    "t_start": "2025-08-13 11:00:00",
+    "t_end": "2025-08-13 11:45:00",
+    "assets": [
+      "M040"
+    ],
+    "verdict": "grid_event",
+    "subtype": "outage",
+    "confidence": 0.901,
+    "evidence": {
+      "rules_fired": [
+        "head_outage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": 0.008887867540443146,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.833
+    }
+  },
+  {
+    "event_id": "AL00889",
+    "t_start": "2025-08-15 12:00:00",
+    "t_end": "2025-08-17 00:00:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.5336659665391608,
+        "max_abs_identity_resid": 0.02277212838412393,
+        "voltage_slope_v_per_day": -0.14548160730177742,
+        "iforest_score": 0.604238293210008,
+        "pv_ratio_to_peers": 0.7684195464266205
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00890",
+    "t_start": "2025-08-17 12:00:00",
+    "t_end": "2025-08-21 00:00:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6826612980200366,
+        "max_abs_identity_resid": 0.019469318301242256,
+        "voltage_slope_v_per_day": 0.025722338029202988,
+        "iforest_score": 0.6299526440668255,
+        "pv_ratio_to_peers": 0.7899804781674296
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00891",
+    "t_start": "2025-08-18 01:45:00",
+    "t_end": "2025-08-22 14:00:00",
+    "assets": [
+      "M025"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.836,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.014029171710263,
+        "max_abs_identity_resid": 0.02645086636653844,
+        "voltage_slope_v_per_day": 0.02592267367665199,
+        "iforest_score": 0.7210668290053539
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00892",
+    "t_start": "2025-08-19 12:15:00",
+    "t_end": "2025-08-21 08:15:00",
+    "assets": [
+      "M026"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.1090935215067361,
+        "max_abs_identity_resid": 0.012455575373091905,
+        "voltage_slope_v_per_day": -0.01241938585748422,
+        "iforest_score": 0.5750287643927467,
+        "pv_ratio_to_peers": 0.7008440694031014
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00893",
+    "t_start": "2025-08-20 14:45:00",
+    "t_end": "2025-08-21 08:15:00",
+    "assets": [
+      "M011"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_degradation",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.97511181789082,
+        "max_abs_identity_resid": 0.021703051006350952,
+        "voltage_slope_v_per_day": -0.004666490075577206,
+        "iforest_score": 0.5238840557357334,
+        "pv_ratio_to_peers": 0.8829120032505173
+      },
+      "neighbors_affected": 0.042
+    }
+  },
+  {
+    "event_id": "AL00894",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F1-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00895",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F2-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00896",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F1-C"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00897",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00898",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F2-A"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00899",
+    "t_start": "2025-08-21 10:00:00",
+    "t_end": "2025-08-21 12:00:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "grid_event",
+    "subtype": "mv_voltage_step",
+    "confidence": 0.82,
+    "evidence": {
+      "rules_fired": [
+        "head_mv_step"
+      ],
+      "scores": {},
+      "neighbors_affected": 1.0
+    }
+  },
+  {
+    "event_id": "AL00900",
+    "t_start": "2025-08-21 12:00:00",
+    "t_end": "2025-08-24 12:00:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.4539116574055981,
+        "max_abs_identity_resid": 0.02018327469883108,
+        "voltage_slope_v_per_day": -0.09480290919711051,
+        "iforest_score": 0.5957268329275863,
+        "pv_ratio_to_peers": 0.7818714348529042
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00901",
+    "t_start": "2025-08-22 00:00:00",
+    "t_end": "2025-08-23 01:00:00",
+    "assets": [
+      "M003"
+    ],
+    "verdict": "data_quality",
+    "subtype": "stuck",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "stuck",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.2699398858683253,
+        "max_abs_identity_resid": 0.0038119414607938945,
+        "voltage_slope_v_per_day": 0.406600577209012,
+        "iforest_score": 0.7262599413002981
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00902",
+    "t_start": "2025-08-22 12:00:00",
+    "t_end": "2025-08-23 08:45:00",
+    "assets": [
+      "M026"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_degradation",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.6205583616487331,
+        "max_abs_identity_resid": 0.019631664323992576,
+        "voltage_slope_v_per_day": -0.04562825003983674,
+        "iforest_score": 0.538074257930449,
+        "pv_ratio_to_peers": 0.8067576208643524
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00903",
+    "t_start": "2025-08-22 13:45:00",
+    "t_end": "2025-08-22 15:45:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.818,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase"
+      ],
+      "scores": {
+        "gap_kw": 0.107
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M010",
+          "beta": 0.064,
+          "t": 1.6,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M007",
+          "beta": 1.037,
+          "t": 0.8,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M022",
+          "beta": 0.038,
+          "t": 0.1,
+          "evidence": "weak"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00904",
+    "t_start": "2025-08-22 20:15:00",
+    "t_end": "2025-08-24 19:45:00",
+    "assets": [
+      "F1-B"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.775,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase",
+        "balance_gap_phase_slow"
+      ],
+      "scores": {
+        "gap_kw": 0.156
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M007",
+          "beta": 0.101,
+          "t": 2.1,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M011",
+          "beta": 0.028,
+          "t": 1.6,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M022",
+          "beta": 0.135,
+          "t": 1.4,
+          "evidence": "weak"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00905",
+    "t_start": "2025-08-23 00:15:00",
+    "t_end": "2025-08-24 02:00:00",
+    "assets": [
+      "M005"
+    ],
+    "verdict": "data_quality",
+    "subtype": "drift",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.795077005540975,
+        "max_abs_identity_resid": 0.01770880217635369,
+        "voltage_slope_v_per_day": -1.5886505265887905,
+        "iforest_score": 0.6851465074160432
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00906",
+    "t_start": "2025-08-23 12:00:00",
+    "t_end": "2025-08-23 22:15:00",
+    "assets": [
+      "M003"
+    ],
+    "verdict": "data_quality",
+    "subtype": "stuck",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "register_jump",
+        "stuck",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.8068247525285415,
+        "max_abs_identity_resid": 0.0065561670779431475,
+        "voltage_slope_v_per_day": 2.1813357234540183,
+        "iforest_score": 0.7578279403693374
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00907",
+    "t_start": "2025-08-23 16:15:00",
+    "t_end": "2025-09-01 10:30:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.871,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase",
+        "balance_gap_phase_slow"
+      ],
+      "scores": {
+        "gap_kw": -0.174
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M042",
+          "beta": -0.178,
+          "t": -9.3,
+          "evidence": "strong"
+        },
+        {
+          "meter": "M031",
+          "beta": -0.055,
+          "t": -2.0,
+          "evidence": "weak"
+        },
+        {
+          "meter": "M045",
+          "beta": -0.041,
+          "t": -1.4,
+          "evidence": "weak"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00908",
+    "t_start": "2025-08-23 17:30:00",
+    "t_end": "2025-08-25 14:00:00",
+    "assets": [
+      "M042"
+    ],
+    "verdict": "data_quality",
+    "subtype": "stuck",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "stuck",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 7.071291316210704,
+        "max_abs_identity_resid": 0.0009632102101327634,
+        "voltage_slope_v_per_day": -2.966063634184198,
+        "iforest_score": 0.7965726438284823
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00909",
+    "t_start": "2025-08-24 01:45:00",
+    "t_end": "2025-08-24 14:45:00",
+    "assets": [
+      "M025"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.092657633563391,
+        "max_abs_identity_resid": 0.03143689938038959,
+        "voltage_slope_v_per_day": 0.0,
+        "iforest_score": 0.7512042525638251
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00910",
+    "t_start": "2025-08-24 13:45:00",
+    "t_end": "2025-08-26 02:00:00",
+    "assets": [
+      "M005"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.9301808739436126,
+        "max_abs_identity_resid": 0.015002114509404151,
+        "voltage_slope_v_per_day": -0.01963243769531417,
+        "iforest_score": 0.7022204079714364
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00911",
+    "t_start": "2025-08-25 03:15:00",
+    "t_end": "2025-08-25 03:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.9272533684513746,
+        "max_abs_identity_resid": 0.07751365714178132,
+        "voltage_slope_v_per_day": 0.1255910468269047,
+        "iforest_score": 0.7928441194486898
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00912",
+    "t_start": "2025-08-25 04:30:00",
+    "t_end": "2025-08-25 05:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.04362022136246,
+        "max_abs_identity_resid": 0.025728044422525645,
+        "voltage_slope_v_per_day": 0.058504964817607516,
+        "iforest_score": 0.812089927300525
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 7.2368,
+        "rv_sd": 8.0704,
+        "r_id": -0.3129,
+        "r_reg": 0.331
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.0531
+      }
+    }
+  },
+  {
+    "event_id": "AL00913",
+    "t_start": "2025-08-25 06:30:00",
+    "t_end": "2025-08-25 08:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.7660395058480276,
+        "max_abs_identity_resid": 0.08629273071328168,
+        "voltage_slope_v_per_day": 0.08588098432199337,
+        "iforest_score": 0.8089059169192294,
+        "pv_ratio_to_peers": 1.0052945446603716
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 6.6597,
+        "rv_sd": 7.9724,
+        "r_id": 1.0768,
+        "r_reg": -0.4732
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.6046
+      }
+    }
+  },
+  {
+    "event_id": "AL00914",
+    "t_start": "2025-08-25 09:00:00",
+    "t_end": "2025-08-25 15:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.4652111723729035,
+        "max_abs_identity_resid": 0.11711263316080195,
+        "voltage_slope_v_per_day": -0.058204115146391004,
+        "iforest_score": 0.8294393346457998,
+        "pv_ratio_to_peers": 0.997379853955393
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.7862,
+        "rv_sd": 6.4801,
+        "r_id": 3.9858,
+        "r_reg": -0.4452
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1207
+      }
+    }
+  },
+  {
+    "event_id": "AL00915",
+    "t_start": "2025-08-25 12:00:00",
+    "t_end": "2025-08-26 08:15:00",
+    "assets": [
+      "M038"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.9667952555975887,
+        "max_abs_identity_resid": 0.015348160447554084,
+        "voltage_slope_v_per_day": -0.03880432900060231,
+        "iforest_score": 0.5359816063466689,
+        "pv_ratio_to_peers": 1.001458023689983
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00916",
+    "t_start": "2025-08-25 16:00:00",
+    "t_end": "2025-08-25 16:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "tampering",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.998570311610024,
+        "max_abs_identity_resid": 0.09216735824130387,
+        "voltage_slope_v_per_day": -0.06113223283032722,
+        "iforest_score": 0.7834129280832955,
+        "pv_ratio_to_peers": 0.9542076667659019
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00917",
+    "t_start": "2025-08-25 17:30:00",
+    "t_end": "2025-08-25 22:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.320912783661242,
+        "max_abs_identity_resid": 0.09148593930546049,
+        "voltage_slope_v_per_day": -0.22355791035837547,
+        "iforest_score": 0.8196664777626532,
+        "pv_ratio_to_peers": -0.8068925413673061
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.1874,
+        "rv_sd": 6.5066,
+        "r_id": 4.0157,
+        "r_reg": -0.1728
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.5255
+      }
+    }
+  },
+  {
+    "event_id": "AL00918",
+    "t_start": "2025-08-25 22:45:00",
+    "t_end": "2025-08-25 23:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.6358096025689974,
+        "max_abs_identity_resid": 0.04632533052601327,
+        "voltage_slope_v_per_day": -0.3398023367336683,
+        "iforest_score": 0.817331001760316
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.6902,
+        "rv_sd": 6.304,
+        "r_id": 3.864,
+        "r_reg": -0.3864
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.762
+      }
+    }
+  },
+  {
+    "event_id": "AL00919",
+    "t_start": "2025-08-25 23:45:00",
+    "t_end": "2025-08-26 06:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.320098818834737,
+        "max_abs_identity_resid": 0.10951758222313177,
+        "voltage_slope_v_per_day": -0.2378155510756326,
+        "iforest_score": 0.831809409508111
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.4554,
+        "rv_sd": 6.3243,
+        "r_id": 3.8833,
+        "r_reg": 0.2088
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.4214
+      }
+    }
+  },
+  {
+    "event_id": "AL00920",
+    "t_start": "2025-08-26 07:00:00",
+    "t_end": "2025-08-26 11:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.951308605887732,
+        "max_abs_identity_resid": 0.09042908993996829,
+        "voltage_slope_v_per_day": -0.3080514653078661,
+        "iforest_score": 0.8194865890765951,
+        "pv_ratio_to_peers": 1.006591292545255
+      },
+      "neighbors_affected": 0.042,
+      "shap": {
+        "r_v": 5.5012,
+        "rv_sd": 6.4633,
+        "r_id": 4.0135,
+        "r_reg": -0.4462
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.8778
+      }
+    }
+  },
+  {
+    "event_id": "AL00921",
+    "t_start": "2025-08-26 13:45:00",
+    "t_end": "2025-09-06 14:00:00",
+    "assets": [
+      "M005"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.93867198088455,
+        "max_abs_identity_resid": 0.017441047107088613,
+        "voltage_slope_v_per_day": -0.004715353271100934,
+        "iforest_score": 0.7176471557941992
+      },
+      "neighbors_affected": 0.167
+    }
+  },
+  {
+    "event_id": "AL00922",
+    "t_start": "2025-08-27 01:30:00",
+    "t_end": "2025-08-27 02:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.8832527057399773,
+        "max_abs_identity_resid": 0.09837123714544507,
+        "voltage_slope_v_per_day": 0.125785094627415,
+        "iforest_score": 0.8003919810783471
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00923",
+    "t_start": "2025-08-27 03:00:00",
+    "t_end": "2025-08-27 03:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.4791492010594425,
+        "max_abs_identity_resid": 0.07673622590234902,
+        "voltage_slope_v_per_day": 0.3272571316400293,
+        "iforest_score": 0.8055395558648152
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00924",
+    "t_start": "2025-08-27 05:15:00",
+    "t_end": "2025-08-27 07:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.204363904583886,
+        "max_abs_identity_resid": 0.05882014070966571,
+        "voltage_slope_v_per_day": 0.554999819419738,
+        "iforest_score": 0.8082328325344927
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00925",
+    "t_start": "2025-08-27 07:45:00",
+    "t_end": "2025-08-27 09:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.558639875006122,
+        "max_abs_identity_resid": 0.11957778176075243,
+        "voltage_slope_v_per_day": 0.4513813959825392,
+        "iforest_score": 0.8117516564061017,
+        "pv_ratio_to_peers": 0.9992717861621137
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00926",
+    "t_start": "2025-08-27 10:30:00",
+    "t_end": "2025-08-27 13:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.0809950667157864,
+        "max_abs_identity_resid": 0.057446602250913595,
+        "voltage_slope_v_per_day": 0.3587393173039273,
+        "iforest_score": 0.8191269301340096,
+        "pv_ratio_to_peers": 0.9950323977605047
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.352,
+        "rv_sd": 6.6071,
+        "r_id": 4.0004,
+        "r_reg": -0.4377
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.3986
+      }
+    }
+  },
+  {
+    "event_id": "AL00927",
+    "t_start": "2025-08-27 13:45:00",
+    "t_end": "2025-08-27 14:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9234635349845348,
+        "max_abs_identity_resid": 0.05215218439994777,
+        "voltage_slope_v_per_day": 0.45506152200287897,
+        "iforest_score": 0.7949446854425757,
+        "pv_ratio_to_peers": 0.9679200393937346
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00928",
+    "t_start": "2025-08-27 15:00:00",
+    "t_end": "2025-08-27 16:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.4461178880313525,
+        "max_abs_identity_resid": 0.051482619197580404,
+        "voltage_slope_v_per_day": 0.4923240403208836,
+        "iforest_score": 0.8236340347044829,
+        "pv_ratio_to_peers": 0.990654508517719
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.9046,
+        "rv_sd": 6.7637,
+        "r_id": 3.4344,
+        "r_reg": -0.4558
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.3184
+      }
+    }
+  },
+  {
+    "event_id": "AL00929",
+    "t_start": "2025-08-27 18:15:00",
+    "t_end": "2025-08-27 18:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9788568373045052,
+        "max_abs_identity_resid": 0.0537319619864448,
+        "voltage_slope_v_per_day": 0.575463181774384,
+        "iforest_score": 0.7318771931600128
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00930",
+    "t_start": "2025-08-27 19:45:00",
+    "t_end": "2025-08-27 22:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.7148402764400146,
+        "max_abs_identity_resid": 0.04571187691415502,
+        "voltage_slope_v_per_day": 0.2694032761591888,
+        "iforest_score": 0.8236340347044829
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.2423,
+        "rv_sd": 6.5215,
+        "r_id": 3.9266,
+        "r_reg": -0.0436
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.9931
+      }
+    }
+  },
+  {
+    "event_id": "AL00931",
+    "t_start": "2025-08-27 23:30:00",
+    "t_end": "2025-08-28 00:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.498337599209009,
+        "max_abs_identity_resid": 0.04423837838604749,
+        "voltage_slope_v_per_day": 0.3066599292075568,
+        "iforest_score": 0.8207466394318111
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 4.8656,
+        "rv_sd": 6.4333,
+        "r_id": 3.9844,
+        "r_reg": 0.2835
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1401
+      }
+    }
+  },
+  {
+    "event_id": "AL00932",
+    "t_start": "2025-08-28 01:30:00",
+    "t_end": "2025-08-28 05:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.865167584299655,
+        "max_abs_identity_resid": 0.08842897519298512,
+        "voltage_slope_v_per_day": 0.06866248546052939,
+        "iforest_score": 0.8363862972326341
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.4864,
+        "rv_sd": 6.1723,
+        "r_id": 3.5259,
+        "r_reg": 0.8122
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 3.4365
+      }
+    }
+  },
+  {
+    "event_id": "AL00933",
+    "t_start": "2025-08-28 07:00:00",
+    "t_end": "2025-08-28 07:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.0612333640487464,
+        "max_abs_identity_resid": 0.06577471620954206,
+        "voltage_slope_v_per_day": -0.06648441845830128,
+        "iforest_score": 0.7913807111616861,
+        "pv_ratio_to_peers": 1.0626642532565922
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00934",
+    "t_start": "2025-08-28 08:45:00",
+    "t_end": "2025-08-28 09:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.4945616744728056,
+        "max_abs_identity_resid": 0.055618138568201025,
+        "voltage_slope_v_per_day": -0.12354101089058367,
+        "iforest_score": 0.7993932360297122,
+        "pv_ratio_to_peers": 1.0191466216236347
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00935",
+    "t_start": "2025-08-28 09:45:00",
+    "t_end": "2025-08-29 09:30:00",
+    "assets": [
+      "M026"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_degradation",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.7988748781660036,
+        "max_abs_identity_resid": 0.00902487028486647,
+        "voltage_slope_v_per_day": -0.033187774838062546,
+        "iforest_score": 0.5301314880961784,
+        "pv_ratio_to_peers": 0.6602526939236071
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00936",
+    "t_start": "2025-08-28 10:15:00",
+    "t_end": "2025-08-28 11:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.4894495767085516,
+        "max_abs_identity_resid": 0.05194295706041319,
+        "voltage_slope_v_per_day": -0.29732310779492854,
+        "iforest_score": 0.8130368224610087,
+        "pv_ratio_to_peers": 0.9890352542117541
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00937",
+    "t_start": "2025-08-28 12:30:00",
+    "t_end": "2025-08-28 12:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.7758077587847652,
+        "max_abs_identity_resid": 0.06989610107643274,
+        "voltage_slope_v_per_day": -0.31478050699782534,
+        "iforest_score": 0.7380181661838606,
+        "pv_ratio_to_peers": 0.9636597013592497
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00938",
+    "t_start": "2025-08-28 14:30:00",
+    "t_end": "2025-08-28 15:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9657485109771642,
+        "max_abs_identity_resid": 0.041799211613075093,
+        "voltage_slope_v_per_day": -0.2507587377713406,
+        "iforest_score": 0.8064607893710943,
+        "pv_ratio_to_peers": 0.9630472067419021
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 4.4961,
+        "rv_sd": 6.9059,
+        "r_id": 4.2355,
+        "r_reg": -0.4707
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.2808
+      },
+      "linked_rule_alert": {
+        "alert_id": "AL00939",
+        "rule": "voltage_offset",
+        "hours_apart": 2.5
+      }
+    }
+  },
+  {
+    "event_id": "AL00939",
+    "t_start": "2025-08-28 17:45:00",
+    "t_end": "2025-08-28 18:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6132708816913919,
+        "max_abs_identity_resid": 0.017000221946284394,
+        "voltage_slope_v_per_day": 0.020178256752639175,
+        "iforest_score": 0.7161050434391744
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00940",
+    "t_start": "2025-08-28 21:45:00",
+    "t_end": "2025-08-28 22:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.305202366198614,
+        "max_abs_identity_resid": 0.10161041056163984,
+        "voltage_slope_v_per_day": -0.16102177103963497,
+        "iforest_score": 0.8013438044456442
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00941",
+    "t_start": "2025-08-28 23:00:00",
+    "t_end": "2025-08-29 01:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.610223532301006,
+        "max_abs_identity_resid": 0.08059013990705464,
+        "voltage_slope_v_per_day": -0.06665080071315031,
+        "iforest_score": 0.8114033796236519
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 6.8663,
+        "rv_sd": 7.7449,
+        "r_id": -0.2379,
+        "r_reg": 0.9326
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 3.0452
+      },
+      "linked_rule_alert": {
+        "alert_id": "AL00939",
+        "rule": "voltage_offset",
+        "hours_apart": 5.0
+      }
+    }
+  },
+  {
+    "event_id": "AL00942",
+    "t_start": "2025-08-29 02:30:00",
+    "t_end": "2025-08-29 02:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.7225381631767505,
+        "max_abs_identity_resid": 0.02336192460809113,
+        "voltage_slope_v_per_day": -0.17811139492989833,
+        "iforest_score": 0.8169988899317892
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 6.1476,
+        "rv_sd": 7.1352,
+        "r_id": 2.3715,
+        "r_reg": -0.1916
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 3.5983
+      }
+    }
+  },
+  {
+    "event_id": "AL00943",
+    "t_start": "2025-08-29 03:30:00",
+    "t_end": "2025-08-29 06:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.741693282605809,
+        "max_abs_identity_resid": 0.06495255827409732,
+        "voltage_slope_v_per_day": -0.11125888959898922,
+        "iforest_score": 0.8254438127861655
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.8061,
+        "rv_sd": 6.8407,
+        "r_id": 2.1794,
+        "r_reg": 0.8706
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.4869
+      }
+    }
+  },
+  {
+    "event_id": "AL00944",
+    "t_start": "2025-08-29 05:00:00",
+    "t_end": "2025-09-02 00:00:00",
+    "assets": [
+      "M003"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "leakage",
+    "confidence": 0.773,
+    "evidence": {
+      "rules_fired": [
+        "night_leakage"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.2251070847296148,
+        "max_abs_identity_resid": 0.008749810165278508,
+        "voltage_slope_v_per_day": 0.05231387635191587,
+        "iforest_score": 0.5562623855452382
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00945",
+    "t_start": "2025-08-29 06:00:00",
+    "t_end": "2025-08-29 18:00:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "dropout",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "dropout"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.0,
+        "max_abs_identity_resid": 0.0,
+        "voltage_slope_v_per_day": -0.012609883205533063,
+        "iforest_score": 0.0
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00946",
+    "t_start": "2025-08-29 06:45:00",
+    "t_end": "2025-08-29 10:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.075374653162044,
+        "max_abs_identity_resid": 0.06338948200570439,
+        "voltage_slope_v_per_day": -0.1427568504608121,
+        "iforest_score": 0.8135723586195953,
+        "pv_ratio_to_peers": 1.0052346341978982
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.0554,
+        "rv_sd": 6.6795,
+        "r_id": 4.0903,
+        "r_reg": -0.4584
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1575
+      }
+    }
+  },
+  {
+    "event_id": "AL00947",
+    "t_start": "2025-08-29 11:15:00",
+    "t_end": "2025-08-29 16:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.171976046786909,
+        "max_abs_identity_resid": 0.12961070298883362,
+        "voltage_slope_v_per_day": -0.27344328529256534,
+        "iforest_score": 0.8283477327638884,
+        "pv_ratio_to_peers": 0.9868623031614174
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00948",
+    "t_start": "2025-08-29 16:30:00",
+    "t_end": "2025-08-30 07:30:00",
+    "assets": [
+      "M036"
+    ],
+    "verdict": "equipment_fault",
+    "subtype": "pv_soiling",
+    "confidence": 0.554,
+    "evidence": {
+      "rules_fired": [
+        "pv_underperform"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.6215884274932648,
+        "max_abs_identity_resid": 0.012410226052600845,
+        "voltage_slope_v_per_day": 0.06712960130482905,
+        "iforest_score": 0.4593680659123501,
+        "pv_ratio_to_peers": 1.0009713123628452
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00949",
+    "t_start": "2025-08-29 17:00:00",
+    "t_end": "2025-08-29 17:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.826539617690486,
+        "max_abs_identity_resid": 0.030371371705759913,
+        "voltage_slope_v_per_day": -0.2358647987939424,
+        "iforest_score": 0.8096164151491467,
+        "pv_ratio_to_peers": 1.0
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.4572,
+        "rv_sd": 6.575,
+        "r_id": 3.6155,
+        "r_reg": -0.3919
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1378
+      }
+    }
+  },
+  {
+    "event_id": "AL00950",
+    "t_start": "2025-08-29 18:00:00",
+    "t_end": "2025-08-29 18:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.098141887673734,
+        "max_abs_identity_resid": 0.03597749046671923,
+        "voltage_slope_v_per_day": -0.20203380260836062,
+        "iforest_score": 0.8227306341785845
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 6.0098,
+        "rv_sd": 6.9221,
+        "r_id": 2.3657,
+        "r_reg": 0.3242
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1169
+      }
+    }
+  },
+  {
+    "event_id": "AL00951",
+    "t_start": "2025-08-29 19:15:00",
+    "t_end": "2025-08-29 19:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.535510702971152,
+        "max_abs_identity_resid": 0.0384862089081551,
+        "voltage_slope_v_per_day": -0.13301221344368103,
+        "iforest_score": 0.8147277435999954
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 4.2699,
+        "rv_sd": 6.6252,
+        "r_id": 4.2259,
+        "r_reg": 0.2781
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.3033
+      }
+    }
+  },
+  {
+    "event_id": "AL00952",
+    "t_start": "2025-08-29 21:00:00",
+    "t_end": "2025-08-29 21:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.9247468240577348,
+        "max_abs_identity_resid": 0.07882531150941825,
+        "voltage_slope_v_per_day": -0.29418175176219796,
+        "iforest_score": 0.7880723432009932
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00953",
+    "t_start": "2025-08-29 23:30:00",
+    "t_end": "2025-08-29 23:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.5220876015493445,
+        "max_abs_identity_resid": 0.09722302055522293,
+        "voltage_slope_v_per_day": -0.24006546516605715,
+        "iforest_score": 0.7870501037924301
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00954",
+    "t_start": "2025-08-30 12:00:00",
+    "t_end": "2025-08-30 17:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "tampering",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.606321232227515,
+        "max_abs_identity_resid": 0.08290712306423652,
+        "voltage_slope_v_per_day": -0.19751777486552077,
+        "iforest_score": 0.8150021802306278,
+        "pv_ratio_to_peers": 0.999727426385564
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00955",
+    "t_start": "2025-08-30 17:45:00",
+    "t_end": "2025-08-30 19:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.2467215905865316,
+        "max_abs_identity_resid": 0.1017658692426553,
+        "voltage_slope_v_per_day": -0.15176575410940546,
+        "iforest_score": 0.8125016388205162
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.7194,
+        "rv_sd": 7.2486,
+        "r_id": 1.4435,
+        "r_reg": 0.9254
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.1787
+      }
+    }
+  },
+  {
+    "event_id": "AL00956",
+    "t_start": "2025-08-30 19:45:00",
+    "t_end": "2025-08-30 22:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.818764526084834,
+        "max_abs_identity_resid": 0.047676290900378664,
+        "voltage_slope_v_per_day": -0.31604828594632906,
+        "iforest_score": 0.8312618687625036
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.6868,
+        "rv_sd": 6.3777,
+        "r_id": 3.6209,
+        "r_reg": 0.1713
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.5256
+      }
+    }
+  },
+  {
+    "event_id": "AL00957",
+    "t_start": "2025-08-30 20:30:00",
+    "t_end": "2025-09-04 02:00:00",
+    "assets": [
+      "M029"
+    ],
+    "verdict": "data_quality",
+    "subtype": "bias",
+    "confidence": 0.836,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.9835063477764265,
+        "max_abs_identity_resid": 0.0169866118901366,
+        "voltage_slope_v_per_day": 0.03476317585564205,
+        "iforest_score": 0.8121609632672704
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00958",
+    "t_start": "2025-08-30 22:45:00",
+    "t_end": "2025-08-30 23:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.6710645624961842,
+        "max_abs_identity_resid": 0.06550767885654371,
+        "voltage_slope_v_per_day": -0.1473942507998166,
+        "iforest_score": 0.7809425421954751
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00959",
+    "t_start": "2025-08-31 00:45:00",
+    "t_end": "2025-08-31 02:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.602748918063639,
+        "max_abs_identity_resid": 0.06387789188079764,
+        "voltage_slope_v_per_day": 0.21109310459390096,
+        "iforest_score": 0.8165765615859357
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 6.6428,
+        "rv_sd": 7.6573,
+        "r_id": 1.6362,
+        "r_reg": -0.4855
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.7544
+      }
+    }
+  },
+  {
+    "event_id": "AL00960",
+    "t_start": "2025-08-31 03:30:00",
+    "t_end": "2025-08-31 04:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 7.2675611357233265,
+        "max_abs_identity_resid": 0.07551532319029942,
+        "voltage_slope_v_per_day": 0.07732679773425712,
+        "iforest_score": 0.8250815393178408
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00961",
+    "t_start": "2025-08-31 05:30:00",
+    "t_end": "2025-08-31 05:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.0562493974981635,
+        "max_abs_identity_resid": 0.04821940801461217,
+        "voltage_slope_v_per_day": 0.35416435512014355,
+        "iforest_score": 0.8099350287614095
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 4.3028,
+        "rv_sd": 6.7817,
+        "r_id": 4.2437,
+        "r_reg": -0.0634
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.0975
+      }
+    }
+  },
+  {
+    "event_id": "AL00962",
+    "t_start": "2025-08-31 06:45:00",
+    "t_end": "2025-08-31 07:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.623942482115439,
+        "max_abs_identity_resid": 0.018387656792690305,
+        "voltage_slope_v_per_day": 0.2515600113761935,
+        "iforest_score": 0.8155018880394579
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 6.7031,
+        "rv_sd": 7.7336,
+        "r_id": 1.4643,
+        "r_reg": -0.4802
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.395
+      }
+    }
+  },
+  {
+    "event_id": "AL00963",
+    "t_start": "2025-08-31 07:45:00",
+    "t_end": "2025-08-31 09:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.822349718866519,
+        "max_abs_identity_resid": 0.06712285606559543,
+        "voltage_slope_v_per_day": 0.5382661044755246,
+        "iforest_score": 0.7962412108052052,
+        "pv_ratio_to_peers": 0.9817956677112936
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00964",
+    "t_start": "2025-08-31 10:30:00",
+    "t_end": "2025-08-31 10:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.791211748108907,
+        "max_abs_identity_resid": 0.03503244229972066,
+        "voltage_slope_v_per_day": 0.42578676803287857,
+        "iforest_score": 0.786532025978288,
+        "pv_ratio_to_peers": 0.9488648874561569
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 4.3881,
+        "rv_sd": 6.2867,
+        "r_id": 4.3509,
+        "r_reg": -0.4289
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.5001
+      }
+    }
+  },
+  {
+    "event_id": "AL00965",
+    "t_start": "2025-08-31 11:30:00",
+    "t_end": "2025-08-31 12:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.8357796375173336,
+        "max_abs_identity_resid": 0.044382881708590914,
+        "voltage_slope_v_per_day": 0.4383190610951113,
+        "iforest_score": 0.7927535350670812,
+        "pv_ratio_to_peers": 0.9728777466658667
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 4.6988,
+        "rv_sd": 6.9584,
+        "r_id": 3.6232,
+        "r_reg": -0.5041
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.7973
+      }
+    }
+  },
+  {
+    "event_id": "AL00966",
+    "t_start": "2025-08-31 13:00:00",
+    "t_end": "2025-08-31 14:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.3805624486568604,
+        "max_abs_identity_resid": 0.07938291202366655,
+        "voltage_slope_v_per_day": 0.2740459562776665,
+        "iforest_score": 0.8130368224610087,
+        "pv_ratio_to_peers": 0.968791185995332
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00967",
+    "t_start": "2025-08-31 16:30:00",
+    "t_end": "2025-08-31 17:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.127731381819501,
+        "max_abs_identity_resid": 0.07782140997834328,
+        "voltage_slope_v_per_day": 0.301473484882138,
+        "iforest_score": 0.7889526437436782,
+        "pv_ratio_to_peers": 0.9565188352086462
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00968",
+    "t_start": "2025-08-31 18:45:00",
+    "t_end": "2025-08-31 19:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.0549702090538915,
+        "max_abs_identity_resid": 0.04633115961594221,
+        "voltage_slope_v_per_day": 0.12053225979848187,
+        "iforest_score": 0.8299856749132827
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.7588,
+        "rv_sd": 6.5396,
+        "r_id": 3.9629,
+        "r_reg": -0.4396
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.4291
+      }
+    }
+  },
+  {
+    "event_id": "AL00969",
+    "t_start": "2025-08-31 20:30:00",
+    "t_end": "2025-08-31 22:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.935,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.622944787126983,
+        "max_abs_identity_resid": 0.07085483157507297,
+        "voltage_slope_v_per_day": 0.03988934992732979,
+        "iforest_score": 0.8367535343483844
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00970",
+    "t_start": "2025-08-31 23:45:00",
+    "t_end": "2025-09-01 12:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 5.161879470664559,
+        "max_abs_identity_resid": 0.09554934420738019,
+        "voltage_slope_v_per_day": -0.11085893230844264,
+        "iforest_score": 0.8323573109112673,
+        "pv_ratio_to_peers": 1.0101950647086315
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.8277,
+        "rv_sd": 6.46,
+        "r_id": 3.3565,
+        "r_reg": 0.2425
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.923
+      }
+    }
+  },
+  {
+    "event_id": "AL00971",
+    "t_start": "2025-09-01 04:00:00",
+    "t_end": "2025-09-02 02:00:00",
+    "assets": [
+      "M039"
+    ],
+    "verdict": "data_quality",
+    "subtype": "stuck",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "stuck",
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 9.516226694602551,
+        "max_abs_identity_resid": 0.009339459476913203,
+        "voltage_slope_v_per_day": 2.986320659030792,
+        "iforest_score": 0.7759011079738489
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00972",
+    "t_start": "2025-09-01 12:30:00",
+    "t_end": "2025-09-15 22:45:00",
+    "assets": [
+      "F2-B"
+    ],
+    "verdict": "data_quality",
+    "subtype": "energy_gap",
+    "confidence": 0.871,
+    "evidence": {
+      "rules_fired": [
+        "balance_gap_phase",
+        "balance_gap_phase_slow"
+      ],
+      "scores": {
+        "gap_kw": -0.061
+      },
+      "neighbors_affected": 1.0,
+      "suspects": [
+        {
+          "meter": "M030",
+          "beta": -0.156,
+          "t": -4.3,
+          "evidence": "strong"
+        },
+        {
+          "meter": "M031",
+          "beta": -0.099,
+          "t": -7.8,
+          "evidence": "strong"
+        },
+        {
+          "meter": "M042",
+          "beta": 0.01,
+          "t": 1.0,
+          "evidence": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "AL00973",
+    "t_start": "2025-09-01 13:30:00",
+    "t_end": "2025-09-01 16:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.2768702971001744,
+        "max_abs_identity_resid": 0.06734709927740924,
+        "voltage_slope_v_per_day": 0.12699615744752507,
+        "iforest_score": 0.8029101227683948,
+        "pv_ratio_to_peers": 0.9768009600820518
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 4.4949,
+        "rv_sd": 6.7346,
+        "r_id": 4.3285,
+        "r_reg": -0.4916
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.8359
+      }
+    }
+  },
+  {
+    "event_id": "AL00974",
+    "t_start": "2025-09-01 20:15:00",
+    "t_end": "2025-09-01 22:00:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.831869448127435,
+        "max_abs_identity_resid": 0.055767141696085376,
+        "voltage_slope_v_per_day": -0.20482472917050434,
+        "iforest_score": 0.812858388756963
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.3869,
+        "rv_sd": 6.4619,
+        "r_id": 3.8812,
+        "r_reg": -0.3833
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.9869
+      }
+    }
+  },
+  {
+    "event_id": "AL00975",
+    "t_start": "2025-09-01 22:15:00",
+    "t_end": "2025-09-01 22:30:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.006835960907068,
+        "max_abs_identity_resid": 0.011600097715887802,
+        "voltage_slope_v_per_day": 0.38860178325871997,
+        "iforest_score": 0.7854867128438641
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.0573,
+        "rv_sd": 8.2063,
+        "r_id": 0.2886,
+        "r_reg": 1.0144
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.9236
+      },
+      "linked_rule_alert": {
+        "alert_id": "AL00977",
+        "rule": "voltage_offset",
+        "hours_apart": 0.75
+      }
+    }
+  },
+  {
+    "event_id": "AL00976",
+    "t_start": "2025-09-01 22:45:00",
+    "t_end": "2025-09-01 23:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.6028551208057706,
+        "max_abs_identity_resid": 0.04066090539145749,
+        "voltage_slope_v_per_day": -0.2360363564863442,
+        "iforest_score": 0.7872228722195409
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 3.7858,
+        "rv_sd": 6.5488,
+        "r_id": 4.3635,
+        "r_reg": -0.0813
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.5862
+      }
+    }
+  },
+  {
+    "event_id": "AL00977",
+    "t_start": "2025-09-01 23:15:00",
+    "t_end": "2025-09-02 15:45:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "drift",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.122887802800761,
+        "max_abs_identity_resid": 0.02330072760354045,
+        "voltage_slope_v_per_day": 1.9006903978714003,
+        "iforest_score": 0.7313536149084233
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00978",
+    "t_start": "2025-09-02 00:45:00",
+    "t_end": "2025-09-02 03:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.7732416628320493,
+        "max_abs_identity_resid": 0.06515816532556352,
+        "voltage_slope_v_per_day": -0.15206674642934914,
+        "iforest_score": 0.8200263736076313
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.718,
+        "rv_sd": 6.3545,
+        "r_id": 3.8578,
+        "r_reg": -0.3834
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.8276
+      }
+    }
+  },
+  {
+    "event_id": "AL00979",
+    "t_start": "2025-09-02 04:00:00",
+    "t_end": "2025-09-02 04:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 1.3004969674892664,
+        "max_abs_identity_resid": 0.049908312448799064,
+        "voltage_slope_v_per_day": -0.10271768176956766,
+        "iforest_score": 0.7853245035699005
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 3.1575,
+        "rv_sd": 6.8975,
+        "r_id": 4.6875,
+        "r_reg": -0.1808
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.6901
+      }
+    }
+  },
+  {
+    "event_id": "AL00980",
+    "t_start": "2025-09-02 05:00:00",
+    "t_end": "2025-09-02 07:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.409376172832651,
+        "max_abs_identity_resid": 0.06367670185313279,
+        "voltage_slope_v_per_day": 0.04937745100281708,
+        "iforest_score": 0.8133938073837259
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 4.2848,
+        "rv_sd": 6.6958,
+        "r_id": 1.5448,
+        "r_reg": 2.8364
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.6148
+      }
+    }
+  },
+  {
+    "event_id": "AL00981",
+    "t_start": "2025-09-02 08:30:00",
+    "t_end": "2025-09-02 08:45:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.91,
+    "evidence": {
+      "rules_fired": [
+        "iforest"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 3.1896358138936307,
+        "max_abs_identity_resid": 0.014258139009782168,
+        "voltage_slope_v_per_day": -0.03414431366710156,
+        "iforest_score": 0.7989668124805613
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 6.5788,
+        "rv_sd": 8.0955,
+        "r_id": 0.7791,
+        "r_reg": -0.4993
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.9642
+      }
+    }
+  },
+  {
+    "event_id": "AL00982",
+    "t_start": "2025-09-02 09:30:00",
+    "t_end": "2025-09-02 12:00:00",
+    "assets": [
+      "M043"
+    ],
+    "verdict": "data_quality",
+    "subtype": "pv_reading_high",
+    "confidence": 0.818,
+    "evidence": {
+      "rules_fired": [
+        "pv_over_report"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 0.6317792440591177,
+        "max_abs_identity_resid": 0.01012064120766211,
+        "voltage_slope_v_per_day": -0.04364243640581962,
+        "iforest_score": 0.479676458771452,
+        "pv_ratio_to_peers": 1.3525239837210836
+      },
+      "neighbors_affected": 0.125
+    }
+  },
+  {
+    "event_id": "AL00983",
+    "t_start": "2025-09-02 10:30:00",
+    "t_end": "2025-09-02 11:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "spike",
+    "confidence": 0.97,
+    "evidence": {
+      "rules_fired": [
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.9079222079987517,
+        "max_abs_identity_resid": 0.07840954456511459,
+        "voltage_slope_v_per_day": 0.1960586017549094,
+        "iforest_score": 0.7842000603162265,
+        "pv_ratio_to_peers": 0.9956023009653042
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00984",
+    "t_start": "2025-09-02 12:15:00",
+    "t_end": "2025-09-02 16:15:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity",
+        "power_identity_persist"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.7286553244468905,
+        "max_abs_identity_resid": 0.13823227878305924,
+        "voltage_slope_v_per_day": 0.1530949737193129,
+        "iforest_score": 0.8175104172650247,
+        "pv_ratio_to_peers": 0.9864784242644271
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.4694,
+        "rv_sd": 6.5271,
+        "r_id": 3.8589,
+        "r_reg": -0.3786
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 2.2572
+      }
+    }
+  },
+  {
+    "event_id": "AL00985",
+    "t_start": "2025-09-02 19:00:00",
+    "t_end": "2025-09-02 21:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 6.079050546381637,
+        "max_abs_identity_resid": 0.06946969920077424,
+        "voltage_slope_v_per_day": 0.09404527306285138,
+        "iforest_score": 0.8212872539406642
+      },
+      "neighbors_affected": 0.083,
+      "shap": {
+        "r_v": 5.2399,
+        "rv_sd": 6.4538,
+        "r_id": 3.9299,
+        "r_reg": -0.0418
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 1.9142
+      }
+    }
+  },
+  {
+    "event_id": "AL00986",
+    "t_start": "2025-09-02 21:30:00",
+    "t_end": "2025-09-03 01:30:00",
+    "assets": [
+      "M030"
+    ],
+    "verdict": "data_quality",
+    "subtype": "drift",
+    "confidence": 0.921,
+    "evidence": {
+      "rules_fired": [
+        "voltage_offset"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 2.607150677670205,
+        "max_abs_identity_resid": 0.01286905637989062,
+        "voltage_slope_v_per_day": -0.15850205112730603,
+        "iforest_score": 0.6872565650624202
+      },
+      "neighbors_affected": 0.083
+    }
+  },
+  {
+    "event_id": "AL00987",
+    "t_start": "2025-09-02 22:30:00",
+    "t_end": "2025-09-03 02:30:00",
+    "assets": [
+      "M018"
+    ],
+    "verdict": "data_quality",
+    "subtype": "unusual_pattern",
+    "confidence": 0.744,
+    "evidence": {
+      "rules_fired": [
+        "iforest",
+        "power_identity"
+      ],
+      "scores": {
+        "max_abs_voltage_resid_v": 4.492474059449535,
+        "max_abs_identity_resid": 0.07034081624777702,
+        "voltage_slope_v_per_day": 0.14841663380059963,
+        "iforest_score": 0.831992003224374
+      },
+      "neighbors_affected": 0.125,
+      "shap": {
+        "r_v": 5.4871,
+        "rv_sd": 6.5549,
+        "r_id": 3.8717,
+        "r_reg": -0.037
+      },
+      "shap_top": {
+        "feature": "rv_sd",
+        "value": 3.0949
+      }
+    }
+  }
+]

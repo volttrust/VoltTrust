@@ -1,0 +1,14 @@
+[project]
+name = "volttrust"
+version = "0.1.0"
+description = "VoltTrust Tunisia: an AI trust layer between raw energy data and automated action (TSYP14)"
+requires-python = ">=3.10"
+authors = [{ name = "VoltTrust" }]
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "escalation"]
+pythonpath = ["src"]

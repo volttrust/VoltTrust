@@ -1,0 +1,590 @@
+# VoltTrust operator dashboard: every label and explanation sentence, English and French.
+#
+# Each explanation has four lines: headline / saw (what we saw) / why / check.
+# Placeholders are filled only from logged values (the alert and its data-window snapshot);
+# a value that can't be computed shows as "n/a".
+
+ui:
+  title: {en: "VoltTrust: alerts to review", fr: "VoltTrust : alertes à examiner"}
+  language: {en: "Language", fr: "Langue"}
+  operator: {en: "Operator ID", fr: "Identifiant opérateur"}
+  data_source: {en: "Results", fr: "Résultats"}
+  filter_verdict: {en: "Show verdicts", fr: "Verdicts affichés"}
+  filter_band: {en: "Confidence", fr: "Confiance"}
+  queue: {en: "Alert queue", fr: "File des alertes"}
+  queue_count: {en: "{n} alerts", fr: "{n} alertes"}
+  col_time: {en: "Time", fr: "Heure"}
+  col_asset: {en: "Asset", fr: "Équipement"}
+  col_verdict: {en: "Verdict", fr: "Verdict"}
+  col_conf: {en: "Confidence", fr: "Confiance"}
+  col_summary: {en: "Explanation", fr: "Explication"}
+  pick: {en: "Select an alert in the queue.", fr: "Sélectionnez une alerte dans la file."}
+  saw: {en: "What we saw", fr: "Constat"}
+  why: {en: "Why we think so", fr: "Pourquoi"}
+  check: {en: "What to check", fr: "À vérifier"}
+  notes: {en: "Data limits", fr: "Limites des données"}
+  chart: {en: "Raw signal around the alert", fr: "Signal brut autour de l'alerte"}
+  chart_this: {en: "this asset", fr: "cet équipement"}
+  chart_neigh: {en: "neighbours (median)", fr: "voisins (médiane)"}
+  chart_head: {en: "substation (phase)", fr: "poste (phase)"}
+  chart_homes: {en: "sum of home meters", fr: "somme des compteurs des foyers"}
+  chart_gap: {en: "substation minus home meters", fr: "poste moins compteurs des foyers"}
+  chart_gap_day: {en: "24 h mean", fr: "moyenne 24 h"}
+  chart_alert: {en: "alert", fr: "alerte"}
+  evidence: {en: "Evidence", fr: "Éléments"}
+  ev_rule: {en: "Check", fr: "Contrôle"}
+  ev_measured: {en: "Measured", fr: "Mesuré"}
+  ev_allowed: {en: "Allowed", fr: "Seuil"}
+  shap_title: {en: "What made the pattern detector flag it (SHAP, positive = more unusual)",
+               fr: "Ce qui a fait réagir le détecteur de comportements (SHAP, positif = plus inhabituel)"}
+  homes_title: {en: "Homes to check first", fr: "Foyers à vérifier en priorité"}
+  homes_weak: {en: "weaker evidence", fr: "indice plus faible"}
+  homes_none: {en: "The numbers point to no single home yet.", fr: "Les données ne désignent encore aucun foyer."}
+  tier: {en: "Escalation tier", fr: "Niveau d'escalade"}
+  decide: {en: "Your decision", fr: "Votre décision"}
+  approve: {en: "Approve", fr: "Approuver"}
+  override: {en: "Override", fr: "Contredire"}
+  escalate: {en: "Escalate", fr: "Escalader"}
+  reason: {en: "Reason (required to override or undo)", fr: "Motif (obligatoire pour contredire ou annuler)"}
+  need_reason: {en: "Write a reason before overriding or undoing.", fr: "Indiquez un motif avant de contredire ou d'annuler."}
+  logged: {en: "Logged: {choice} by {op}.", fr: "Enregistré : {choice} par {op}."}
+  history: {en: "Decision log for this alert", fr: "Journal des décisions pour cette alerte"}
+  log_ok: {en: "Log chain intact", fr: "Chaîne du journal intacte"}
+  log_bad: {en: "Log chain BROKEN", fr: "Chaîne du journal ROMPUE"}
+  no_action: {en: "Demo: decisions are logged only; nothing is sent to the network.",
+              fr: "Démo : les décisions sont seulement enregistrées ; rien n'est envoyé au réseau."}
+  versions: {en: "Recorded with each decision", fr: "Enregistré avec chaque décision"}
+  detected: {en: "Seen by the operator at", fr: "Visible par l'opérateur à"}
+  meters_word: {en: "meters", fr: "compteurs"}
+  owner_sent: {en: "Message sent to the owner", fr: "Message envoyé au propriétaire"}
+  undo: {en: "Undo", fr: "Annuler"}
+  pilot_mode: {en: "Pilot mode", fr: "Mode pilote"}
+  pilot_group: {en: "Group", fr: "Groupe"}
+  pilot_participant: {en: "Participant ID", fr: "Identifiant du participant"}
+  pilot_title: {en: "VoltTrust: what really happened?", fr: "VoltTrust : que s'est-il vraiment passé ?"}
+  pilot_need_id: {en: "Enter your participant ID in the sidebar to start.", fr: "Saisissez votre identifiant dans la barre latérale pour commencer."}
+  pilot_item: {en: "Item {i} of {n}", fr: "Cas {i} sur {n}"}
+  pilot_system_says: {en: "The system says", fr: "Le système indique"}
+  pilot_call: {en: "What really happened?", fr: "Que s'est-il vraiment passé ?"}
+  pilot_action: {en: "Your decision on the system's verdict", fr: "Votre décision sur le verdict du système"}
+  pilot_clarity: {en: "I understood why the system flagged this (1 = not at all, 5 = fully)", fr: "J'ai compris pourquoi le système a signalé ceci (1 = pas du tout, 5 = tout à fait)"}
+  pilot_submit: {en: "Submit and go to the next item", fr: "Valider et passer au cas suivant"}
+  pilot_answer_all: {en: "Answer all three questions first.", fr: "Répondez d'abord aux trois questions."}
+  pilot_done: {en: "That's all, thank you!", fr: "C'est terminé, merci !"}
+  if_allowed: {en: "below the rarest 0.01% of Jan to Apr", fr: "sous les 0,01 % les plus rares de janv. à avr."}
+  h_time: {en: "Time", fr: "Heure"}
+  h_actor: {en: "By", fr: "Par"}
+  h_action: {en: "Tier / action", fr: "Niveau / action"}
+  h_reason: {en: "Reason", fr: "Motif"}
+  units:
+    voltage_v: {en: "Voltage (V)", fr: "Tension (V)"}
+    active_power_kw: {en: "Power (kW)", fr: "Puissance (kW)"}
+    solar_kw: {en: "Solar output (kW)", fr: "Production solaire (kW)"}
+    frequency_hz: {en: "Frequency (Hz)", fr: "Fréquence (Hz)"}
+    balance: {en: "Gap (kW)", fr: "Écart (kW)"}
+  snapshot: {en: "Raw-readings snapshot", fr: "Instantané des mesures brutes"}
+  window: {en: "Data window", fr: "Fenêtre de données"}
+  sort_newest: {en: "Newest first", fr: "Plus récentes d'abord"}
+
+router_reasons:
+  "safety event": {en: "safety event", fr: "événement de sécurité"}
+  "safe mode on": {en: "safe mode on", fr: "mode sûr activé"}
+  "physical grid action": {en: "physical grid action", fr: "action physique sur le réseau"}
+  "verdict implies wrongdoing": {en: "verdict implies wrongdoing", fr: "le verdict implique une faute"}
+  "always reviewed by a person": {en: "always reviewed by a person", fr: "toujours examiné par une personne"}
+  "dust: owner notified automatically": {en: "dust: owner notified automatically", fr: "poussière : propriétaire prévenu automatiquement"}
+  "never silent": {en: "pattern alerts are always notified, never silent", fr: "les alertes de comportement sont toujours notifiées, jamais silencieuses"}
+  "conformal set uncertain": {en: "more than one verdict possible", fr: "plusieurs verdicts possibles"}
+  "novel pattern": {en: "novel pattern", fr: "comportement nouveau"}
+  "detectors disagree": {en: "detectors disagree", fr: "détecteurs en désaccord"}
+  "correlated anomalies": {en: "several meters affected together", fr: "plusieurs compteurs touchés ensemble"}
+  "impact above auto limit": {en: "impact above the automatic limit", fr: "impact au-delà de la limite automatique"}
+  "automation circuit breaker": {en: "automation circuit breaker", fr: "coupe-circuit de l'automatisation"}
+  confidence_at_least: {en: "confidence {c} ≥ {b}", fr: "confiance {c} ≥ {b}"}
+  confidence_below: {en: "confidence {c} below review band", fr: "confiance {c} sous le seuil de revue"}
+
+bands:
+  high: {en: "high", fr: "élevée"}
+  medium: {en: "medium", fr: "moyenne"}
+  low: {en: "low", fr: "faible"}
+# High >= 85%, Medium 60 to 85%, Low < 60% (goal2-templates.md)
+
+verdicts:
+  grid_event: {en: "Grid event", fr: "Événement réseau"}
+  equipment_fault: {en: "Equipment fault", fr: "Défaut d'équipement"}
+  data_quality: {en: "Data problem", fr: "Problème de données"}
+
+tiers:
+  T0: {en: "T0: log only", fr: "T0 : enregistrement seul"}
+  T1: {en: "T1: automatic, logged", fr: "T1 : automatique, enregistré"}
+  T2: {en: "T2: automatic + notify, undoable", fr: "T2 : automatique + notification, annulable"}
+  T3: {en: "T3: human approval required", fr: "T3 : approbation humaine requise"}
+  T4: {en: "T4: emergency alert (protection acts)", fr: "T4 : alerte d'urgence (la protection agit)"}
+
+pilot_calls:
+  grid_event: {en: "A real event on the grid", fr: "Un vrai événement sur le réseau"}
+  equipment_fault: {en: "Broken equipment", fr: "Un équipement défaillant"}
+  data_quality: {en: "A bad or falsified reading", fr: "Une mesure erronée ou falsifiée"}
+  nothing: {en: "Nothing at all", fr: "Rien du tout"}
+
+# message sent to a panel owner when a dust alert notifies automatically
+owner_message:
+  dust:
+    en: "Hello, your solar panels are producing about {loss}% less than nearby panels, which usually means dust. A gentle rinse with water, when the panels are cool, normally brings the output back. No need to contact us unless it stays low."
+    fr: "Bonjour, vos panneaux solaires produisent environ {loss} % de moins que les panneaux voisins, ce qui indique généralement de la poussière. Un rinçage doux à l'eau, panneaux froids, rétablit normalement la production. Inutile de nous contacter, sauf si elle reste faible."
+
+choices:
+  undo: {en: "undo", fr: "annuler"}
+  approve: {en: "approve", fr: "approuver"}
+  override: {en: "override", fr: "contredire"}
+  escalate: {en: "escalate", fr: "escalader"}
+
+na: {en: "n/a", fr: "n/d"}
+
+# ---- explanations, by subtype -----------------------------------------------
+explain:
+  outage:
+    headline:
+      en: "Power outage, {band} confidence ({conf}%)."
+      fr: "Coupure de courant, confiance {band} ({conf} %)."
+    saw:
+      en: "{share}% of homes on {feeder} lost power at {t_start} for {dur}."
+      fr: "{share} % des foyers du {feeder} ont perdu l'alimentation à {t_start} pendant {dur}."
+    why:
+      en: "Many meters reported the cut together, so this is a real outage, not a meter fault."
+      fr: "De nombreux compteurs ont signalé la coupure en même temps : il s'agit d'une vraie coupure, pas d'un défaut de compteur."
+    check:
+      en: "Substation and MV feeder status."
+      fr: "État du poste et du départ MT."
+  sag:
+    headline:
+      en: "Voltage sag, {band} confidence ({conf}%)."
+      fr: "Creux de tension, confiance {band} ({conf} %)."
+    saw:
+      en: "Voltage fell to {v_min} V (normal 207 to 253 V) at {t_start} on {share}% of meters."
+      fr: "La tension est descendue à {v_min} V (normale 207 à 253 V) à {t_start} sur {share} % des compteurs."
+    why:
+      en: "All meters agree, so the network really dipped."
+      fr: "Tous les compteurs concordent : le réseau a réellement baissé."
+    check:
+      en: "MV events and large loads starting at {t_start}."
+      fr: "Incidents MT et démarrages de fortes charges à {t_start}."
+  mv_voltage_step:
+    headline:
+      en: "Supply voltage step, {band} confidence ({conf}%)."
+      fr: "Saut de tension d'alimentation, confiance {band} ({conf} %)."
+    saw:
+      en: "All three phases shifted by {step}% at {t_start}."
+      fr: "Les trois phases ont varié de {step} % à {t_start}."
+    why:
+      en: "A shift on all phases at once comes from the MV side (tap change or upstream switching)."
+      fr: "Une variation simultanée sur toutes les phases vient du côté MT (changement de prise ou manœuvre amont)."
+    check:
+      en: "Upstream switching log."
+      fr: "Journal des manœuvres amont."
+  frequency_excursion:
+    headline:
+      en: "Frequency excursion, {band} confidence ({conf}%)."
+      fr: "Écart de fréquence, confiance {band} ({conf} %)."
+    saw:
+      en: "Frequency reached {f} Hz at {t_start} (normal 49.8 to 50.2 Hz)."
+      fr: "La fréquence a atteint {f} Hz à {t_start} (normale 49,8 à 50,2 Hz)."
+    why:
+      en: "Frequency is national, so this is a grid-wide event."
+      fr: "La fréquence est nationale : événement à l'échelle du réseau."
+    check:
+      en: "National dispatch notices."
+      fr: "Avis du dispatching national."
+  phase_loss:
+    headline:
+      en: "Lost phase, {band} confidence ({conf}%)."
+      fr: "Perte de phase, confiance {band} ({conf} %)."
+    saw:
+      en: "Phase {phase} at the substation dropped to {v} V at {t_start}, while the other two stayed normal."
+      fr: "La phase {phase} du poste est tombée à {v} V à {t_start}, les deux autres restant normales."
+    why:
+      en: "Only one phase is down at the source, which points to a fuse or breaker, not the meters."
+      fr: "Une seule phase est coupée à la source : cela désigne un fusible ou un disjoncteur, pas les compteurs."
+    check:
+      en: "Fuse or breaker on phase {phase}."
+      fr: "Fusible ou disjoncteur de la phase {phase}."
+  high_resistance_joint:
+    headline:
+      en: "Likely bad connection near {asset}, {band} confidence ({conf}%)."
+      fr: "Probable mauvaise connexion près de {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Voltage at {asset} sits {dv} V below its neighbors and drops further when the home draws power."
+      fr: "La tension de {asset} est {dv} V sous celle de ses voisins et baisse davantage quand le foyer consomme."
+    why:
+      en: "Neighbors further along are affected too ({share}%), so the drop is on the line, not in one meter."
+      fr: "Les voisins en aval sont aussi touchés ({share} %) : la chute est sur la ligne, pas dans un seul compteur."
+    check:
+      en: "Joints and connectors on the line to {asset}."
+      fr: "Jonctions et connecteurs de la ligne vers {asset}."
+  leakage:
+    headline:
+      en: "Possible electrical leakage at {asset}, {band} confidence ({conf}%)."
+      fr: "Fuite électrique possible chez {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Between 01:00 and 05:00 the home drew {q_ratio} times more reactive than real power."
+      fr: "Entre 1 h et 5 h, le foyer a absorbé {q_ratio} fois plus de puissance réactive que de puissance active."
+    why:
+      en: "Normal night loads don't do that."
+      fr: "Les charges de nuit normales ne font pas cela."
+    check:
+      en: "Insulation and wiring at {asset}."
+      fr: "Isolation et câblage chez {asset}."
+  overload_risk_notice:
+    headline:
+      en: "Transformer overload notice, {band} confidence ({conf}%)."
+      fr: "Avis de surcharge du transformateur, confiance {band} ({conf} %)."
+    saw:
+      en: "Load stayed above 100% of the 100 kVA rating for {dur}."
+      fr: "La charge est restée au-dessus de 100 % des 100 kVA nominaux pendant {dur}."
+    why:
+      en: "Load is the sum of the substation readings; a long overload ages the transformer."
+      fr: "La charge est la somme des mesures du poste ; une surcharge prolongée use le transformateur."
+    check:
+      en: "Load transfer options before the evening peak."
+      fr: "Possibilités de report de charge avant la pointe du soir."
+  overload_risk_alarm:
+    headline:
+      en: "Transformer overheating alarm, {band} confidence ({conf}%)."
+      fr: "Alarme d'échauffement du transformateur, confiance {band} ({conf} %)."
+    saw:
+      en: "Estimated oil temperature reached {oil} °C (limit 105 °C)."
+      fr: "La température d'huile estimée a atteint {oil} °C (limite 105 °C)."
+    why:
+      en: "Estimated from load and outdoor temperature."
+      fr: "Estimée d'après la charge et la température extérieure."
+    check:
+      en: "Reduce load now; inspect transformer."
+      fr: "Réduire la charge maintenant ; inspecter le transformateur."
+  transformer_overheat:
+    headline:
+      en: "Transformer cooling problem, {band} confidence ({conf}%)."
+      fr: "Problème de refroidissement du transformateur, confiance {band} ({conf} %)."
+    saw:
+      en: "The oil monitor reads {oil} °C above what this load and weather should give."
+      fr: "Le capteur d'huile indique {oil} °C de plus que prévu pour cette charge et cette météo."
+    why:
+      en: "Load and weather explain normal oil temperature; the extra heat is the transformer itself."
+      fr: "La charge et la météo expliquent la température normale ; l'excès vient du transformateur."
+    check:
+      en: "Cooling fins, oil level."
+      fr: "Ailettes de refroidissement, niveau d'huile."
+  pv_inverter_trip:
+    headline:
+      en: "Solar inverter off at {asset}, {band} confidence ({conf}%)."
+      fr: "Onduleur solaire à l'arrêt chez {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "In full sun, {asset}'s panels produce nothing since {t_start}."
+      fr: "En plein soleil, les panneaux de {asset} ne produisent rien depuis {t_start}."
+    why:
+      en: "Nearby panels produce normally, so it isn't the weather."
+      fr: "Les panneaux voisins produisent normalement : ce n'est pas la météo."
+    check:
+      en: "Inverter at {asset}; notify the owner."
+      fr: "Onduleur chez {asset} ; prévenir le propriétaire."
+  pv_soiling_likely:
+    headline:
+      en: "Panels at {asset} likely dusty, {band} confidence ({conf}%)."
+      fr: "Panneaux de {asset} probablement encrassés, confiance {band} ({conf} %)."
+    saw:
+      en: "Output has slid slowly to {ratio}% of nearby panels."
+      fr: "La production a baissé progressivement à {ratio} % de celle des panneaux voisins."
+    why:
+      en: "A slow slide fits dust; a sudden recovery after cleaning or rain will confirm it."
+      fr: "Une baisse lente correspond à la poussière ; une remontée nette après nettoyage ou pluie le confirmera."
+    check:
+      en: "Suggest cleaning to the owner."
+      fr: "Proposer un nettoyage au propriétaire."
+  pv_soiling:
+    headline:
+      en: "Dust confirmed at {asset}."
+      fr: "Encrassement confirmé chez {asset}."
+    saw:
+      en: "Output slid to {ratio}% of nearby panels, then jumped back up."
+      fr: "La production est descendue à {ratio} % des panneaux voisins, puis est remontée."
+    why:
+      en: "A jump back after the slide is the signature of cleaning or rain."
+      fr: "Une remontée après la baisse est le signe d'un nettoyage ou d'une pluie."
+    check:
+      en: "No action needed."
+      fr: "Aucune action nécessaire."
+  pv_aging_inspect:
+    headline:
+      en: "Panels at {asset} may be aging, {band} confidence ({conf}%)."
+      fr: "Vieillissement possible des panneaux de {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Output has stayed at {ratio}% of nearby panels for 60 days with no recovery."
+      fr: "La production reste à {ratio} % des panneaux voisins depuis 60 jours sans remontée."
+    why:
+      en: "Dust alone would not explain that."
+      fr: "La poussière seule ne l'explique pas."
+    check:
+      en: "Technician inspection."
+      fr: "Inspection par un technicien."
+  pv_degradation:
+    headline:
+      en: "Sudden panel loss at {asset}, {band} confidence ({conf}%)."
+      fr: "Perte brutale de production chez {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Output fell to {ratio}% of nearby panels within one day and has not come back."
+      fr: "La production est tombée à {ratio} % des panneaux voisins en un jour, sans remontée."
+    why:
+      en: "This fits a failed panel string."
+      fr: "Cela correspond à une chaîne de panneaux défaillante."
+    check:
+      en: "Technician inspection."
+      fr: "Inspection par un technicien."
+  dropout:
+    headline:
+      en: "Meter {asset} stopped sending data, {band} confidence ({conf}%)."
+      fr: "Le compteur {asset} n'envoie plus de données, confiance {band} ({conf} %)."
+    saw:
+      en: "No readings from {t_start} for {dur}."
+      fr: "Aucune mesure à partir de {t_start} pendant {dur}."
+    why:
+      en: "Other meters on the same concentrator report normally, so this is not a collection gap."
+      fr: "Les autres compteurs du même concentrateur remontent normalement : ce n'est pas un défaut de collecte."
+    check:
+      en: "Meter communication module."
+      fr: "Module de communication du compteur."
+  stuck:
+    headline:
+      en: "Meter {asset} reading frozen, {band} confidence ({conf}%)."
+      fr: "Mesure figée sur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "It has reported exactly the same value for {dur}."
+      fr: "Il renvoie exactement la même valeur depuis {dur}."
+    why:
+      en: "A real home never does that."
+      fr: "Un vrai foyer ne fait jamais cela."
+    check:
+      en: "The meter; don't use its data until fixed."
+      fr: "Le compteur ; ne pas utiliser ses données avant réparation."
+  spike:
+    headline:
+      en: "Impossible reading from {asset}, {band} confidence ({conf}%)."
+      fr: "Mesure impossible sur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "At {t_start} it reported {value}."
+      fr: "À {t_start}, il a indiqué {value}."
+    why:
+      en: "That breaks physics (power ≠ voltage × current × power factor by {id_err}%, or a register jump), and neighbors saw nothing."
+      fr: "Cela contredit la physique (puissance ≠ tension × courant × facteur de puissance de {id_err} %, ou saut d'index), et les voisins n'ont rien vu."
+    check:
+      en: "Ignore the value; watch for repeats."
+      fr: "Ignorer la valeur ; surveiller les répétitions."
+  tampering:
+    headline:
+      en: "Possible meter tampering at {asset}, {band} confidence ({conf}%)."
+      fr: "Manipulation possible du compteur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "{tamper_reason}."
+      fr: "{tamper_reason}."
+    why:
+      en: "This is a lead to check, not proof."
+      fr: "C'est une piste à vérifier, pas une preuve."
+    check:
+      en: "Site visit by an inspector."
+      fr: "Visite d'un contrôleur."
+  bias:
+    headline:
+      en: "Meter {asset} reads off, {band} confidence ({conf}%)."
+      fr: "Décalage de mesure sur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Its voltage is a steady {dv} V away from its neighbors on the same phase."
+      fr: "Sa tension s'écarte en permanence de {dv} V de celle de ses voisins sur la même phase."
+    why:
+      en: "The network can't produce a steady offset at one meter."
+      fr: "Le réseau ne peut pas produire un écart constant sur un seul compteur."
+    check:
+      en: "Schedule recalibration."
+      fr: "Programmer un réétalonnage."
+  drift:
+    headline:
+      en: "Meter {asset} drifting, {band} confidence ({conf}%)."
+      fr: "Dérive du compteur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Its voltage moves away from its neighbors by {slope} V per day."
+      fr: "Sa tension s'éloigne de celle de ses voisins de {slope} V par jour."
+    why:
+      en: "Slow, one-meter drift is a sensor problem."
+      fr: "Une dérive lente sur un seul compteur est un problème de capteur."
+    check:
+      en: "Schedule recalibration."
+      fr: "Programmer un réétalonnage."
+  falsified:
+    headline:
+      en: "Readings from {asset} look falsified, {band} confidence ({conf}%)."
+      fr: "Mesures de {asset} probablement falsifiées, confiance {band} ({conf} %)."
+    saw:
+      en: "Its voltage rose {dv} V above neighbors, together with {share}% of nearby meters."
+      fr: "Sa tension a dépassé de {dv} V celle des voisins, avec {share} % des compteurs voisins."
+    why:
+      en: "The network can't produce that pattern."
+      fr: "Le réseau ne peut pas produire ce schéma."
+    check:
+      en: "Data path security; inspector visit."
+      fr: "Sécurité de la chaîne de données ; visite d'un contrôleur."
+  energy_gap:
+    headline:
+      en: "Energy missing on {feeder} phase {phase}, {band} confidence ({conf}%)."
+      fr: "Énergie manquante sur le {feeder} phase {phase}, confiance {band} ({conf} %)."
+    saw:
+      en: "About {gap_kw} kW leaves the substation on this phase but isn't recorded by the home meters, since {t_start}."
+      fr: "Environ {gap_kw} kW sortent du poste sur cette phase sans être enregistrés par les compteurs des foyers, depuis {t_start}."
+    why:
+      en: "Homes to check first: {homes}. These are where the numbers point, not proof of anything."
+      fr: "Foyers à vérifier en priorité : {homes}. Ce sont les pistes indiquées par les données, pas une preuve."
+    check:
+      en: "Field inspection of the listed homes, in order."
+      fr: "Contrôle sur place des foyers listés, dans l'ordre."
+  energy_gap_over:
+    headline:
+      en: "Home meters record more than the substation sends on {feeder} phase {phase}, {band} confidence ({conf}%)."
+      fr: "Les compteurs des foyers enregistrent plus que ce qui sort du poste sur le {feeder} phase {phase}, confiance {band} ({conf} %)."
+    saw:
+      en: "The home meters add up to about {gap_kw} kW more than leaves the substation on this phase, since {t_start}."
+      fr: "La somme des compteurs dépasse d'environ {gap_kw} kW ce qui sort du poste sur cette phase, depuis {t_start}."
+    why:
+      en: "Either the substation meter under-reads, or one or more home meters over-read. Homes to check first: {homes}. These are where the numbers point, not proof of anything, and these households may be overbilled."
+      fr: "Soit le compteur du poste sous-estime, soit un ou plusieurs compteurs de foyers surestiment. Foyers à vérifier en priorité : {homes}. Ce sont les pistes indiquées par les données, pas une preuve, et ces foyers sont peut-être surfacturés."
+    check:
+      en: "First test the substation meter on phase {phase}; if it is accurate, test the listed home meters in order."
+      fr: "Tester d'abord le compteur du poste sur la phase {phase} ; s'il est juste, contrôler les compteurs des foyers listés, dans l'ordre."
+  pv_reading_stuck:
+    headline:
+      en: "Solar reading frozen at {asset}, {band} confidence ({conf}%)."
+      fr: "Mesure solaire figée chez {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "The inverter data hasn't changed for {dur}."
+      fr: "Les données de l'onduleur ne changent plus depuis {dur}."
+    why:
+      en: "The home's meter shows normal solar export, so the panels are fine."
+      fr: "Le compteur du foyer montre une injection solaire normale : les panneaux fonctionnent."
+    check:
+      en: "Inverter data link."
+      fr: "Liaison de données de l'onduleur."
+  pv_reading_high:                # a data problem that blames nobody
+    headline:
+      en: "Inverter reading too high at {asset}, {band} confidence ({conf}%)."
+      fr: "Mesure de l'onduleur trop élevée chez {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "The inverter reports {ratio}% of what nearby panels produce, but the home's meter export didn't rise to match."
+      fr: "L'onduleur indique {ratio} % de la production des panneaux voisins, mais l'injection mesurée par le compteur du foyer n'a pas suivi."
+    why:
+      en: "The inverter reading is higher than the sun allows, so the reading is wrong, not the panels. Billing uses the net meter, so this changes nobody's bill."
+      fr: "La mesure de l'onduleur dépasse ce que permet l'ensoleillement : c'est la mesure qui est fausse, pas les panneaux. La facturation se fait sur le compteur net, donc cela ne change la facture de personne."
+    check:
+      en: "Check the inverter."
+      fr: "Vérifier l'onduleur."
+  unusual_pattern:
+    headline:
+      en: "Unusual readings from {asset}, {band} confidence ({conf}%)."
+      fr: "Mesures inhabituelles sur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "No single rule fired, but the pattern is rare. Main reason: {top_signal_text}."
+      fr: "Aucune règle précise ne s'est déclenchée, mais le comportement est rare. Raison principale : {top_signal_text}."
+    why:
+      en: "The pattern detector learned normal behaviour from January to April."
+      fr: "Le détecteur de comportements a appris le comportement normal de janvier à avril."
+    check:
+      en: "Look at {asset}'s raw data around {t_start}."
+      fr: "Examiner les données brutes de {asset} autour de {t_start}."
+  _default:
+    headline:
+      en: "{subtype} at {asset}, {band} confidence ({conf}%)."
+      fr: "{subtype} sur {asset}, confiance {band} ({conf} %)."
+    saw:
+      en: "Flagged from {t_start} for {dur}."
+      fr: "Signalé à partir de {t_start} pendant {dur}."
+    why:
+      en: "Rules fired: {rules}."
+      fr: "Règles déclenchées : {rules}."
+    check:
+      en: "Raw data around {t_start}."
+      fr: "Données brutes autour de {t_start}."
+
+# linked rule: the nearest voltage-rule alert on the same home
+# leads; SHAP comes second
+linked:
+  en: "Main reason: {linked} (rule: {linked_rule}). The pattern detector also saw: {top_signal_text}."
+  fr: "Raison principale : {linked} (règle : {linked_rule}). Le détecteur de comportements a aussi relevé : {top_signal_text}."
+
+tamper_reason:
+  tamper_alarm:
+    en: "The meter raised a tamper alarm ({alarm_kind}) at {alarm_time}"
+    fr: "Le compteur a émis une alarme de fraude ({alarm_kind}) à {alarm_time}"
+  power_identity_persist:
+    en: "Recorded power stayed {id_err}% away from voltage × current × power factor for {dur}, which a working meter can't do"
+    fr: "La puissance enregistrée est restée à {id_err} % de tension × courant × facteur de puissance pendant {dur}, ce qu'un compteur en bon état ne fait pas"
+
+alarm_kinds:
+  tamper_cover: {en: "cover opened", fr: "capot ouvert"}
+  tamper_magnet: {en: "magnetic field", fr: "champ magnétique"}
+
+top_signal_text:
+  r_v:
+    en: "its voltage is {dv} V away from its neighbors"
+    fr: "sa tension s'écarte de {dv} V de celle de ses voisins"
+  rv_sd:
+    en: "its voltage is unusually jumpy compared with its neighbors"
+    fr: "sa tension est anormalement instable par rapport à ses voisins"
+  r_id:
+    en: "power doesn't match voltage × current × power factor ({id_err}% off)"
+    fr: "la puissance ne correspond pas à tension × courant × facteur de puissance (écart de {id_err} %)"
+  r_reg:
+    en: "the energy register moved differently from the measured power"
+    fr: "l'index d'énergie a évolué différemment de la puissance mesurée"
+
+shap_features:
+  r_v: {en: "voltage vs neighbours", fr: "tension vs voisins"}
+  rv_sd: {en: "voltage jumpiness", fr: "instabilité de la tension"}
+  r_id: {en: "power vs V × I × PF", fr: "puissance vs V × I × FP"}
+  r_reg: {en: "register vs power", fr: "index vs puissance"}
+
+notes:
+  batch:
+    en: "Based on data collected at {batch_time}; up to 12 hours old."
+    fr: "D'après les données collectées à {batch_time} ; jusqu'à 12 heures de retard."
+  estimated_solar:
+    en: "Solar output for this home is estimated from its meter and the weather, not measured."
+    fr: "La production solaire de ce foyer est estimée à partir du compteur et de la météo, non mesurée."
+  no_head:
+    en: "No substation meter here: energy-balance checks are off."
+    fr: "Pas de compteur au poste : les contrôles de bilan d'énergie sont désactivés."
+  phase_unknown:
+    en: "This home's phase is not confirmed; compared with its whole feeder."
+    fr: "La phase de ce foyer n'est pas confirmée ; comparaison avec tout le départ."
+
+# ---- evidence table: one line per rule that fired ---------------------------
+rules:
+  head_outage: {en: "Substation voltage on all phases", fr: "Tension du poste sur toutes les phases"}
+  head_phase_loss: {en: "Substation voltage on one phase", fr: "Tension du poste sur une phase"}
+  head_sag: {en: "Lowest voltage vs normal", fr: "Tension minimale vs normale"}
+  head_mv_step: {en: "Supply voltage change vs last 24 h", fr: "Variation de tension vs 24 h précédentes"}
+  head_frequency: {en: "Frequency away from 50 Hz", fr: "Écart de fréquence à 50 Hz"}
+  group_voltage_drop: {en: "Neighbours with a voltage drop", fr: "Voisins avec une chute de tension"}
+  group_voltage_rise: {en: "Neighbours with a voltage rise", fr: "Voisins avec une hausse de tension"}
+  night_leakage: {en: "Night reactive / real power", fr: "Puissance réactive / active la nuit"}
+  dropout: {en: "Missing readings, other meters fine", fr: "Mesures absentes, autres compteurs normaux"}
+  stuck: {en: "Identical readings in a row", fr: "Mesures identiques successives"}
+  tamper_alarm: {en: "Tamper alarm from the meter", fr: "Alarme de fraude du compteur"}
+  power_identity_persist: {en: "Power vs V × I × PF, held", fr: "Puissance vs V × I × FP, persistant"}
+  power_identity: {en: "Power vs V × I × PF", fr: "Puissance vs V × I × FP"}
+  voltage_spike: {en: "Voltage vs expected", fr: "Tension vs attendue"}
+  register_jump: {en: "Register step vs power", fr: "Saut d'index vs puissance"}
+  pv_reading_stuck: {en: "Identical daytime solar readings", fr: "Mesures solaires de jour identiques"}
+  pv_inverter_trip: {en: "Solar output vs expected", fr: "Production solaire vs attendue"}
+  pv_over_report: {en: "Solar output vs nearby panels", fr: "Production solaire vs panneaux voisins"}
+  pv_underperform: {en: "Solar output vs nearby panels", fr: "Production solaire vs panneaux voisins"}
+  balance_gap_phase: {en: "Substation minus home meters", fr: "Poste moins compteurs des foyers"}
+  balance_gap_phase_slow: {en: "Substation minus home meters, 7-day mean", fr: "Poste moins compteurs, moyenne 7 jours"}
+  voltage_offset: {en: "Steady voltage gap to neighbours", fr: "Écart de tension constant aux voisins"}
+  iforest: {en: "Pattern detector score", fr: "Score du détecteur de comportements"}
+  transformer_overload: {en: "Load vs rating", fr: "Charge vs puissance nominale"}
+  transformer_overload_alarm: {en: "Estimated oil temperature", fr: "Température d'huile estimée"}
+  oil_temperature_residual: {en: "Oil temperature above expected", fr: "Température d'huile au-dessus de l'attendu"}

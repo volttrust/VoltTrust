@@ -1,0 +1,32 @@
+# VoltTrust escalation policy. Every decision log entry records `version`.
+version: "0.1.4"
+scope: smart-metered-neighborhood
+
+hard_triggers:
+  physical_actions: [isolate_section, load_shedding, der_curtailment]
+  accusatory_classes: [falsified, tampering, theft, under_reporting]   # under_reporting = bypass-theft signature
+  always_human_subtypes: [energy_gap, pv_aging_inspect]   # never automatic, whatever the confidence
+  novelty_threshold: 0.8            # autoencoder novelty score in [0,1]
+  correlated_meters: 5              # anomalies at >= N meters in window -> human
+  max_auto_customers: 10
+  max_auto_kw: 50
+  safety_classes: [overvoltage_trip, fault_current]   # T4: protection acts, AI alerts
+
+never_silent_subtypes: [unusual_pattern]   # may act, but always notified with undo (T2), never T1
+auto_notify_subtypes: [pv_soiling_likely, pv_soiling]   # T2 whatever the confidence, unless a hard rule fired
+auto_notify_action: notify_owner_cleaning                # the owner gets a cleaning tip, with undo
+
+# Final confidence = P(anomaly) x P(class) from Goal 2. Bands match Goal 2's
+# display bands: High >= 0.85, Medium 0.60-0.85, Low < 0.60.
+confidence_bands:                   # calibrated confidence lower bounds; below lowest -> T0
+  data_quality:    {T1: 0.85, T2: 0.60, T3: 0.30}
+  equipment_fault: {T2: 0.85, T3: 0.30}   # T2 = open work order + notify
+  grid_event:      {T2: 0.85, T3: 0.0}    # grid events are never silent
+
+circuit_breaker:
+  max_auto_actions: 20
+  window_minutes: 10
+
+timeouts_minutes: {grid_event: 5, equipment_fault: 30, data_quality: 60}
+undo_window_minutes: 15
+safe_mode: false

@@ -1,0 +1,129 @@
+{
+  "val": {
+    "events": 92,
+    "event_recall": 0.924,
+    "event_recall_physical": 0.895,
+    "event_recall_data_problems": 0.932,
+    "verdict_accuracy_on_detected": 0.988,
+    "events_hidden_by_collection_gap": 5,
+    "event_recall_observable": 0.977,
+    "alerts": 577,
+    "alert_precision": 0.969,
+    "false_alerts_per_day": 0.2,
+    "false_alerts_per_feeder_per_day": 0.1,
+    "median_time_to_detect_h": 0.0,
+    "median_time_to_operator_h": 8.75,
+    "median_time_to_operator_h_physical": 9.5,
+    "energy_gap_alerts": 67,
+    "events_with_energy_gap_alert": 30,
+    "suspect_top3_hit_rate": 0.7,
+    "row_precision": 0.971,
+    "row_recall": 0.394,
+    "row_false_positive_rate": 0.0036
+  },
+  "test": {
+    "events": 102,
+    "event_recall": 0.912,
+    "event_recall_physical": 0.957,
+    "event_recall_data_problems": 0.899,
+    "verdict_accuracy_on_detected": 0.989,
+    "events_hidden_by_collection_gap": 4,
+    "event_recall_observable": 0.949,
+    "alerts": 659,
+    "alert_precision": 0.977,
+    "false_alerts_per_day": 0.1,
+    "false_alerts_per_feeder_per_day": 0.05,
+    "median_time_to_detect_h": 0.0,
+    "median_time_to_operator_h": 7.75,
+    "median_time_to_operator_h_physical": 8.38,
+    "energy_gap_alerts": 46,
+    "events_with_energy_gap_alert": 21,
+    "suspect_top3_hit_rate": 0.762,
+    "row_precision": 0.97,
+    "row_recall": 0.464,
+    "row_false_positive_rate": 0.00231
+  },
+  "confidence": {
+    "fitted_on": "data",
+    "window": "val: 2025-05-01 to 2025-07-31",
+    "fit_date": "2026-10-14",
+    "test_months": {
+      "alerts": 659,
+      "share_right": 0.95,
+      "ece_before": 0.149,
+      "ece_after": 0.075
+    },
+    "val_and_test_months": {
+      "alerts": 1236,
+      "share_right": 0.94,
+      "ece_before": 0.134,
+      "ece_after": 0.059
+    }
+  },
+  "site": {
+    "head_meter": "concentrator",
+    "phase_source": "steg_map",
+    "phase_unclear_margin": 0.1,
+    "phase_learn_days": 20,
+    "transformer_monitor": false,
+    "pv_source": "as_data",
+    "use_reference_panel": true,
+    "batch_hours": 12
+  },
+  "param_overrides": {},
+  "phase_map": {
+    "source": "steg_map"
+  },
+  "panels_by_source": [
+    {
+      "pv_source": "inverter_optin",
+      "homes": 3,
+      "events": 9,
+      "recall": 1.0,
+      "recall_panel_faults": 1.0,
+      "verdict_acc": 1.0,
+      "panel_alerts": 21,
+      "false_panel_alerts": 0,
+      "false_per_home_per_year": 0.0
+    },
+    {
+      "pv_source": "estimated",
+      "homes": 11,
+      "events": 9,
+      "recall": 1.0,
+      "recall_panel_faults": 1.0,
+      "verdict_acc": 1.0,
+      "panel_alerts": 61,
+      "false_panel_alerts": 22,
+      "false_per_home_per_year": 2.98
+    }
+  ],
+  "panel_reference": "reference_panel",
+  "panel_dust_vs_aging": {
+    "dust_events_flagged": 3,
+    "dust_events_confirmed_by_recovery": 3,
+    "median_days_from_dust_start_to_confirmation": 23.1,
+    "degradation_events_labelled_degradation": 3,
+    "false_slow_slides": 22,
+    "false_slides_confirmed_as_dust": 10,
+    "aging_inspect_alerts": 0
+  },
+  "transformer": {
+    "monitor": false,
+    "peak_load_pu": 0.321,
+    "peak_top_oil_estimate_c": 58.4,
+    "alerts": {
+      "transformer_overload": 0,
+      "transformer_overload_alarm": 0,
+      "oil_temperature_residual": 0
+    }
+  },
+  "latency": {
+    "batch_seconds_for_full_year": 32.7,
+    "ms_per_15min_snapshot_all_assets": 0.933,
+    "load_seconds": 3.27,
+    "shap_forest_alerts": 199,
+    "shap_seconds_total": 64.62,
+    "shap_ms_per_alert": 324.7
+  }
+}

@@ -1,0 +1,4 @@
+verdict,data_quality,equipment_fault,grid_event,missed
+data_quality,137,0,2,13
+equipment_fault,0,18,0,3
+grid_event,0,0,21,0

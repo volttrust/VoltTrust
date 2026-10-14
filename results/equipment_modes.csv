@@ -1,0 +1,33 @@
+seed,mode,description,split,event_recall,event_recall_observable,verdict_accuracy,alert_precision,false_alerts_per_feeder_per_day,median_hours_to_operator,energy_gap_top3_hit,panel_false_per_inverter_home_year,panel_false_per_estimated_home_year,phases_correct,phase_technician_checks,transformer_alerts
+42,base,"default: concentrator metering, STEG phase map, no oil monitor, 3 opt-in inverters + reference panel",val,0.924,0.977,0.988,0.969,0.1,8.75,0.7,0.0,2.98,,,0
+42,base,"default: concentrator metering, STEG phase map, no oil monitor, 3 opt-in inverters + reference panel",test,0.912,0.949,0.989,0.977,0.05,7.75,0.762,0.0,2.98,,,0
+42,monitor,default + transformer oil monitor,val,0.935,0.989,0.988,0.969,0.1,8.75,0.7,0.0,2.98,,,1
+42,monitor,default + transformer oil monitor,test,0.912,0.949,0.989,0.977,0.05,7.75,0.762,0.0,2.98,,,1
+42,nohead,no substation reading,val,0.837,0.885,0.909,0.949,0.15,7.75,,0.0,2.98,,,0
+42,nohead,no substation reading,test,0.853,0.888,0.977,0.965,0.06,7.25,,0.0,2.98,,,0
+42,inferred,phases inferred (with substation reading),val,0.924,0.977,0.988,0.969,0.1,8.75,0.7,0.0,2.98,48.0,0.0,0
+42,inferred,phases inferred (with substation reading),test,0.912,0.949,0.989,0.977,0.05,7.75,0.762,0.0,2.98,48.0,0.0,0
+42,inferred_nohead,"phases inferred, no substation reading",val,0.837,0.885,0.909,0.949,0.15,7.75,,0.0,2.98,48.0,0.0,0
+42,inferred_nohead,"phases inferred, no substation reading",test,0.853,0.888,0.977,0.965,0.06,7.25,,0.0,2.98,48.0,0.0,0
+42,pv_estimated,all 14 solar homes estimated (no inverter data),val,0.891,0.943,0.976,0.97,0.09,8.75,0.7,0.0,2.45,,,0
+42,pv_estimated,all 14 solar homes estimated (no inverter data),test,0.873,0.908,0.989,0.974,0.06,7.75,0.762,0.0,2.45,,,0
+42,no_refpanel,no reference panel (generic model on hourly weather),val,0.924,0.977,0.988,0.958,0.14,8.75,0.7,6.46,4.2,,,0
+42,no_refpanel,no reference panel (generic model on hourly weather),test,0.912,0.949,0.989,0.956,0.1,7.75,0.762,6.46,4.2,,,0
+42,pv_same_values,"estimated homes with the inverter values (2 low readings, 4 sunny hours)",val,0.924,0.977,0.976,0.755,1.05,8.75,0.7,0.0,63.25,,,0
+42,pv_same_values,"estimated homes with the inverter values (2 low readings, 4 sunny hours)",test,0.922,0.959,0.968,0.7,0.93,7.75,0.762,0.0,63.25,,,0
+2026,base,"default: concentrator metering, STEG phase map, no oil monitor, 3 opt-in inverters + reference panel",val,0.943,0.965,0.988,0.948,0.14,8.25,0.737,0.0,1.94,,,0
+2026,base,"default: concentrator metering, STEG phase map, no oil monitor, 3 opt-in inverters + reference panel",test,0.943,0.971,0.98,0.959,0.11,6.5,0.76,0.0,1.94,,,0
+2026,monitor,default + transformer oil monitor,val,0.943,0.965,0.988,0.948,0.14,8.25,0.737,0.0,1.94,,,1
+2026,monitor,default + transformer oil monitor,test,0.953,0.981,0.98,0.959,0.11,6.5,0.76,0.0,1.94,,,1
+2026,nohead,no substation reading,val,0.897,0.918,0.974,0.846,0.41,8.12,,0.0,1.94,,,0
+2026,nohead,no substation reading,test,0.896,0.922,0.926,0.894,0.27,6.5,,0.0,1.94,,,0
+2026,inferred,phases inferred (with substation reading),val,0.943,0.965,0.988,0.948,0.14,8.25,0.737,0.0,1.94,48.0,0.0,0
+2026,inferred,phases inferred (with substation reading),test,0.943,0.971,0.98,0.959,0.11,6.5,0.76,0.0,1.94,48.0,0.0,0
+2026,inferred_nohead,"phases inferred, no substation reading",val,0.897,0.918,0.974,0.862,0.38,8.12,,0.0,1.94,47.0,0.0,0
+2026,inferred_nohead,"phases inferred, no substation reading",test,0.887,0.913,0.926,0.898,0.26,6.25,,0.0,1.94,47.0,0.0,0
+2026,pv_estimated,all 14 solar homes estimated (no inverter data),val,0.897,0.918,0.987,0.947,0.14,8.25,0.737,0.0,1.49,,,0
+2026,pv_estimated,all 14 solar homes estimated (no inverter data),test,0.906,0.932,0.979,0.958,0.11,6.62,0.76,0.0,1.49,,,0
+2026,no_refpanel,no reference panel (generic model on hourly weather),val,0.943,0.965,0.988,0.945,0.15,8.25,0.737,6.95,2.53,,,0
+2026,no_refpanel,no reference panel (generic model on hourly weather),test,0.934,0.961,0.98,0.94,0.17,6.5,0.76,6.95,2.53,,,0
+2026,pv_same_values,"estimated homes with the inverter values (2 low readings, 4 sunny hours)",val,0.943,0.965,0.976,0.688,1.17,8.38,0.737,0.0,65.85,,,0
+2026,pv_same_values,"estimated homes with the inverter values (2 low readings, 4 sunny hours)",test,0.934,0.961,0.98,0.759,0.9,6.5,0.76,0.0,65.85,,,0
