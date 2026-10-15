@@ -2,6 +2,10 @@
 
 **Checking energy data before anyone acts on it.** TSYP14 Technical Challenge, *Architects of the Energy Noosphere*, Phase 1.
 
+## What is it?
+
+VoltTrust is an AI trust layer for smart-grid data.
+
 Smart meters are arriving in Tunisian homes, and utilities will soon act on their readings automatically. But a reading can be wrong: a sensor drifts, a meter is tampered with, a reading never arrives, or someone injects false data. VoltTrust sits between the raw data and any automatic action. For every alert it answers three questions:
 
 1. **What happened?** A real grid event, an equipment fault, or a data problem.
@@ -12,36 +16,62 @@ The main idea is simple: **the neighbors are witnesses.** When every meter on a 
 
 ![The operator dashboard, in English](docs/img/dashboard_en_energy_gap.png)
 
-## What is in this repository
+## What did we build?
+
+A single-node Tunisian neighborhood simulation, a detector, explanations, an escalation router and an operator dashboard.
 
 | | |
 |---|---|
 | **A dataset** | One simulated year (2025) of a neighborhood near Tunis, at 15-minute resolution: one 100 kVA substation, two low-voltage feeders, 48 homes, 14 of them with rooftop solar. It is driven by the real 2025 Tunis weather and contains 208 labelled problems of 28 types. |
-| **A detector** | Physics checks, an Isolation Forest, and a rule table that gives every alert a verdict. |
+| **A detector** | Physics checks, an Isolation Forest, and a rule table that gives every alert a verdict, a measured confidence and an explanation. |
 | **An escalation router** | Sends each alert to one of five levels of human control, and keeps a tamper-evident decision log. |
 | **An operator dashboard** | One Streamlit screen in English and French to review, approve or override alerts. |
 
-## Quick start
+## What are the results?
+
+**94% of problems detected, 98% right verdicts, 0.11 false alerts per feeder per day, and 8 of 8 unseen attacks caught.**
+
+Measured on a fresh dataset (seed 2026) that was never used for tuning. An event counts as detected when an alert starts on one of its assets while it is happening.
+
+| Measure | Target | Test months, seed 42 | Test months, fresh seed 2026 |
+|---|---|---|---|
+| Problems detected (recall) | ≥ 0.90 | 0.91 | **0.94** |
+| Right verdict, when detected | ≥ 0.85 | 0.99 | **0.98** |
+| False alerts per feeder per day | ≤ 1 | 0.05 | **0.11** |
+| Alert precision | | 0.98 | 0.96 |
+| Theft: right home among the 3 to check | ≥ 0.70 | 0.76 | 0.76 |
+| Confidence calibration error | ≤ 0.08 | 0.075 | 0.054 |
+| Processing time | < 1 s | about 1 ms for all 48 meters | |
+
+Both unseen attacks (replayed readings and coordinated false data) were caught every time, and all 36 solar panel problems were found with the right verdict. Detailed results are in `results/`, and the two notebooks walk through them.
+
+**Known limits.** Problems on the current sensor keep the power equation intact, so they show only in the phase balance: they are caught, but slowly, and point to a phase rather than a home. A failing cooling system on the lightly loaded transformer is hard to see without an oil sensor. About 10% of readings are never collected, as in a real system, and some short events fall entirely inside those gaps.
+
+## How do I run it?
 
 Python 3.10 or later.
 
 ```bash
+# 1. install
 pip install -r requirements.txt
 
-# 1. generate the dataset (about 10 s; data/ already holds seed 42)
+# 2. generate the dataset (about 10 s; data/ already holds seed 42)
 PYTHONPATH=src python -m volttrust.sim.simulate --out data --seed 42
 
-# 2. run the detector and score it (about 40 s)
+# 3. run the detector and score it (about 40 s)
 PYTHONPATH=src python -m volttrust.detect.run --data data --out results
 
-# 3. open the operator dashboard
+# 4. open the operator dashboard
 streamlit run app/dashboard.py
-
-# run the tests
-python -m pytest -q
 ```
 
+To check everything works: `python -m pytest -q`.
+
 `python -m volttrust.detect.run --help` lists the equipment options: with or without a substation meter, with STEG's phase map or with phases inferred from the data, with or without a transformer oil sensor.
+
+---
+
+# Going deeper
 
 ## How the data is made
 
@@ -88,24 +118,6 @@ Every row carries `is_anomaly`, `event_id`, `anomaly_type`, `family` and `verdic
 
 When the homes on a phase use more than the substation records (possible theft), the alert goes to the phase with a ranked list of homes to check first. **The system never accuses a single home**; a person always decides.
 
-## Results
-
-An event counts as detected when an alert starts on one of its assets while it is happening. The last column is a fresh dataset (seed 2026) that was never used for tuning.
-
-| Measure | Target | Test months, seed 42 | Test months, fresh seed 2026 |
-|---|---|---|---|
-| Problems detected (recall) | ≥ 0.90 | 0.91 | 0.94 |
-| Right verdict, when detected | ≥ 0.85 | 0.99 | 0.98 |
-| False alerts per feeder per day | ≤ 1 | 0.05 | 0.11 |
-| Alert precision | | 0.98 | 0.96 |
-| Theft: right home among the 3 to check | ≥ 0.70 | 0.76 | 0.76 |
-| Confidence calibration error | ≤ 0.08 | 0.075 | 0.054 |
-| Processing time | < 1 s | about 1 ms for all 48 meters | |
-
-Both unseen attacks were caught every time, and all 36 solar panel problems were found with the right verdict. Detailed results are in `results/`, and the two notebooks walk through them.
-
-**Known limits.** Problems on the current sensor keep the power equation intact, so they show only in the phase balance: they are caught, but slowly, and point to a phase rather than a home. A failing cooling system on the lightly loaded transformer is hard to see without an oil sensor. About 10% of readings are never collected, as in a real system, and some short events fall entirely inside those gaps.
-
 ## Who decides: escalation
 
 Every alert goes to one of five tiers, from T0 (log only) to T4 (emergency: the grid's protection acts and a person is alerted). Some cases always go to a person, whatever the confidence: anything that means a physical action or accuses a customer, uncertain or new patterns, many meters at once, and every possible theft. Dust on solar panels sends the owner a cleaning tip automatically, which the operator can undo.
@@ -137,4 +149,3 @@ An autoencoder alongside the Isolation Forest, a calibrated confidence model tha
 - STEG open data: monthly electricity sales by voltage level.
 - Residential feeder loads, Laayoune, Morocco: UCI Machine Learning Repository, dataset 1158 (CC BY 4.0).
 - Household benchmark: UNESCWA (2017).
-
