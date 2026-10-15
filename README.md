@@ -1,10 +1,10 @@
-# VoltTrust Tunisia
+# Voltrust Tunisia
 
 **Checking energy data before anyone acts on it.** TSYP14 Technical Challenge, *Architects of the Energy Noosphere*, Phase 1.
 
 ## What is it?
 
-VoltTrust is an AI trust layer for smart-grid data.
+Voltrust is an AI trust layer for smart-grid data.
 
 Smart meters are arriving in Tunisian homes, and utilities will soon act on their readings automatically. But a reading can be wrong: a sensor drifts, a meter is tampered with, a reading never arrives, or someone injects false data. VoltTrust sits between the raw data and any automatic action. For every alert it answers three questions:
 
